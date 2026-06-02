@@ -5,6 +5,3 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/shanayak1/Canadian-Biomass-Potentials-and-Drivers-Tool.git
 git push -u origin main
-
-print("Welcome to the Biomass Potentials and Drivers Tool!")
-user_province = input("Please select a province to analyze:\n1.Alberta\n2.British Columbia")
