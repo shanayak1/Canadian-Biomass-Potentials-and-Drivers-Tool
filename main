@@ -1,0 +1,7 @@
+echo "# Canadian-Biomass-Potentials-and-Drivers-Tool" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/shanayak1/Canadian-Biomass-Potentials-and-Drivers-Tool.git
+git push -u origin main
