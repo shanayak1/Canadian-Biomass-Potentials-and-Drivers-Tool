@@ -16,7 +16,7 @@ sheet_name = 'Sheet1'
 
 df = pd.read_excel(excel_file,
                    sheet_name = sheet_name,
-                   usecols = 'B:E',
+                   usecols = 'B:F',
                    header = 2)
 
 biomass_category = df['Category'].unique().tolist()
@@ -39,20 +39,20 @@ subcategory = st.multiselect('SubCategory:',
 st.dataframe(df)
 
 #filter dataframe based on user selection
-mask = (df['Sustainable Factor'].between(*sus_factor_selection)) & (df['Category'].isin(biomass_selection))
+mask = (df['Sustainable Factor'].between(*sus_factor_selection)) & (df['Category'].isin(biomass_selection)) & (df['SubCategory'].isin(subcategory))
 number_of_result = df[mask].shape[0]
 st.markdown(f'#Available Results: {number_of_result}*')
 
 #group dataframe
 df_grouped = df[mask].groupby(by=['Production Volume']).count()[['Sustainable Factor']]
-#df_grouped = df_grouped.rename(columns={'SubCategory': 'BLAH'})
-#df_grouped = df_grouped.reset_index()
+#df_grouped = df_grouped.rename(columns={'SubCategory': 'Biomass subtypes'})
+df_grouped = df_grouped.reset_index()
 
 #plot bar chart
 bar_chart = px.bar(df_grouped,
                    x = 'Sustainable Factor',
-                   y = 'Sustainable Factor',
-                   text = 'Sustainable Factor',
+                   y = 'Production Volume',
+                   text = 'Production Volume',
                    color_discrete_sequence = ['#F63366']*len(df_grouped),
                    template = 'plotly_white')
 
