@@ -3,7 +3,7 @@ import streamlit as st
 #page setup
 home_page = st.Page(
     page="pages/home.py",
-    title="Intro to Biomass",
+    title="Biomass Potential",
     icon=":material/account_circle:",
     default = True,
 )
@@ -14,6 +14,12 @@ potential_page = st.Page(
     icon = ":material/bar_chart:",
 )
 
+bc_page = st.Page(
+    page = "pages/bc.py",
+    title = "British Columbia",
+    icon = ":material/bar_chart:",
+)
+
 #navigation menu
 
 pg = st.navigation(pages=[home_page, potential_page])
@@ -21,8 +27,9 @@ pg = st.navigation(pages=[home_page, potential_page])
 # navigation with sections
 pg = st.navigation(
     {
-        "Info": [home_page],
-        "projects": [potential_page]
+        "Introductions": [home_page],
+        "Alberta": [potential_page],
+        "British Columbia": [bc_page],
     }
 )
 
