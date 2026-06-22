@@ -8,7 +8,7 @@ st.set_page_config(page_title = "Alberta Biomass Potentials and Availability Dat
                    layout="wide")
 
 st.header('Albertan biomass potentials')
-st.subheader('blah blah blah')
+st.subheader('subtitle')
 
 #load dataframe so our excel worksheet data
 excel_file = 'data.xlsx'
