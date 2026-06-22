@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 def main_menu():
     print("Please select a province to analyze by inputting the corresponding number:\n1. Alberta\n2. British Columbia\n")
     user_province = input(">> ")
-    print(user_province)
 
     if user_province == "1" or user_province == "2":
         return user_province
@@ -30,13 +29,10 @@ while True:
     while user_province == 0:
         print("Invalid input, please try again.")
         user_province = main_menu()
-    print(user_province)
 
     user_choice_one = options_menu()
-
+    
     while user_choice_one == 1:
         print("Invalid Input, please try again")
         user_choice_one = options_menu()
     
-    print ("your choice is")
-    print(user_choice_one)
