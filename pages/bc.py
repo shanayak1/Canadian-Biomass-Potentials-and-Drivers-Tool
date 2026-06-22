@@ -9,7 +9,7 @@ st.set_page_config(page_title = "Alberta Biomass Potentials and Availability Dat
                    page_icon = ":bar_chart:",
                    layout="wide")
 
-st.header('Albertan biomass potentials')
+st.header('Alberta Biomass Potentials and Availability Data')
 st.subheader('subtitle')
 
 #load dataframe so our excel worksheet data
@@ -25,7 +25,7 @@ st.sidebar.header("Filters")
 
 categories = df["Category"].unique()
 
-selected_categories = st.sidebar.multiselect(
+selected_categories = st.multiselect(
     "Select Catgeory",
     categories,
     default = categories
@@ -35,7 +35,7 @@ subcategories = df[
     df["Category"].isin(selected_categories)
 ]["SubCategory"].unique()
 
-selected_subcategories = st.sidebar.multiselect(
+selected_subcategories = st.multiselect(
     "Select SubCategory",
     subcategories,
     default = subcategories
@@ -44,7 +44,7 @@ selected_subcategories = st.sidebar.multiselect(
 min_sf = float(df["Sustainable Factor"].min())
 max_sf = float(df["Sustainable Factor"].max())
 
-selected_sf = st.sidebar.slider(
+selected_sf = st.slider(
     "Sustainable Factor",
     min_sf,
     max_sf,
