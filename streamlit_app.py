@@ -31,3 +31,6 @@ pg = st.navigation(
 
 pg.run()
 
+#shared on all pages
+#st.logo("assets/")
+
