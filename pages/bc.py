@@ -18,7 +18,7 @@ sheet_name = 'Sheet1'
 
 df = pd.read_excel(excel_file,
                    sheet_name = sheet_name,
-                   usecols = 'B:F',
+                   usecols = 'B:D',
                    header = 2)
 
 st.sidebar.header("Filters")
@@ -41,30 +41,31 @@ selected_subcategories = st.multiselect(
     default = subcategories
 )
 
-min_sf = float(df["Sustainable Factor"].min())
-max_sf = float(df["Sustainable Factor"].max())
 
 selected_sf = st.slider(
-    "Sustainable Factor",
-    min_sf,
-    max_sf,
-    (min_sf, max_sf)
+    "Sustainable Removal Factor",
+    min_value = 0.0,
+    max_value = 3.0,
+    value = 1.50,
+    step = 0.10
 )
 
 filtered_df = df[
     (df["Category"].isin(selected_categories))
     &
     (df["SubCategory"].isin(selected_subcategories))
-    &
-    (df["Sustainable Factor"] >= selected_sf[0])
-    &
-    (df["Sustainable Factor"] <= selected_sf[1])
-]
+    
+].copy()
+
+filtered_df["Sustainable Potential"] = (
+    filtered_df["Production Volume"]
+    * selected_sf
+)
 
 fig = px.bar(
     filtered_df,
     x = "SubCategory",
-    y = "Production Volume",
+    y = "Sustainable Potential",
     color = "Category",
     title = "Production Volume by Biomass Subtype"
 )
