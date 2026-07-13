@@ -25,7 +25,7 @@ st.sidebar.header("Filters")
 
 categories = df["Category"].unique()
 
-selected_categories = st.multiselect(
+selected_categories = st.sidebar.multiselect(
     "Select Catgeory",
     categories,
     default = categories
@@ -35,14 +35,14 @@ subcategories = df[
     df["Category"].isin(selected_categories)
 ]["SubCategory"].unique()
 
-selected_subcategories = st.multiselect(
+selected_subcategories = st.sidebar.multiselect(
     "Select SubCategory",
     subcategories,
     default = subcategories
 )
 
 
-selected_sf = st.slider(
+selected_sf = st.sidebar.slider(
     "Sustainable Removal Factor",
     min_value = 0.0,
     max_value = 3.0,
