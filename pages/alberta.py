@@ -65,7 +65,7 @@ filtered_df["Sustainable Potential"] = (
 fig = px.bar(
     filtered_df,
     x = "SubCategory",
-    y = "Sustainable Potential",
+    y = "Sustainable Potential", 
     color = "Category",
     title = "Production Volume by Biomass Subtype"
 )
