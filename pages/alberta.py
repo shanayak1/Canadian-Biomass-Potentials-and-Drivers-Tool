@@ -40,27 +40,27 @@ selected_subcategories = st.sidebar.multiselect(
     default = subcategories
 )
 
-forestry_sf = st.sidebar.slider(
-    "Forestry Sustainable Removal Factor",
-    min_value = 46.00,
-    max_value = 72.00,
-    value = 59.0,
-    step = 1.0
-)
+sf_dict = {}
 
-crop_sf = st.sidebar.slider(
-    "Purpose Grown Energy Crops Sustainable Removal Factor",
-    min_value = 25.00,
-    max_value = 50.00,
-    value = 32.0,
-    step = 1.0
-)
+if "Forestry" in selected_categories:
+    forestry_sf = st.sidebar.slider(
+        "Forestry Sustainable Removal Factor",
+        min_value = 46.00,
+        max_value = 72.00,
+        value = 59.0,
+        step = 1.0
+    )
+    sf_dict["Forestry"] = forestry_sf
 
-
-sf_dict = {
-    "Forestry": forestry_sf,
-    "Purpose Grown Energy Crops": crop_sf
-}
+if "Purpose Grown Energy Crops" in selected_categories:
+    crop_sf = st.sidebar.slider(
+        "Purpose Grown Energy Crops Sustainable Removal Factor",
+        min_value = 25.00,
+        max_value = 50.00,
+        value = 32.0,
+        step = 1.0
+    )
+    sf_dict["Purpose Grown Energy Crops"] = crop_sf
 
 livestock_sf_dict = {
     "Sheep and Lambs" : 0.3,
@@ -77,22 +77,29 @@ livestock_sf_dict = {
     "Beef cows" : 0.5,
 }
 
+#filter all the rows to only have selected categories/subcategories
 filtered_df = df[
     (df["Category"].isin(selected_categories))
     &
     (df["SubCategory"].isin(selected_subcategories))
 ].copy()
 
+#filter them to the selected sustainable removal factor
 filtered_df["Sustainable Removal Factor"] = (
     filtered_df["Category"].map(sf_dict)
 )
 
+#sub in the new livestock sus factor
 livestock_rows = filtered_df["Category"] == "Livestock Residue"
 
+#sub in new crop sus factor
+
+#sub in livestock factor into dataframe
 filtered_df.loc[livestock_rows, "Sustainable Removal Factor"] = (
     filtered_df.loc[livestock_rows, "SubCategory"].map(livestock_sf_dict)
 )
 
+#calculate all sustainable potentials
 filtered_df["Sustainable Potential"] = (
     filtered_df["Production Volume"]
     * filtered_df["Sustainable Removal Factor"]
