@@ -5,11 +5,11 @@ import pandas as pd
 import plotly.express as px
 from PIL import Image
 
-st.set_page_config(page_title = "Alberta Biomass Potentials and Availability Data",
+st.set_page_config(page_title = "British Columbia Biomass Potentials and Availability Data",
                    page_icon = ":bar_chart:",
                    layout="wide")
 
-st.header('Alberta Biomass Potentials and Availability Data')
+st.header('British Columbia Biomass Potentials and Availability Data')
 st.subheader('subtitle')
 
 #load dataframe so our excel worksheet data
