@@ -230,7 +230,7 @@ fig = px.bar(
     x = "SubCategory",
     y = "Sustainable Potential", 
     color = "Category",
-    title = "Production Volume by Biomass Subtype"
+    title = "Production Volume by Biomass Subtype",
 )
 
 st.plotly_chart(fig, use_container_width = True)
