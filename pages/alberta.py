@@ -1,5 +1,4 @@
 import streamlit as st
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -57,9 +56,25 @@ crop_sf = st.sidebar.slider(
     step = 1.0
 )
 
+
 sf_dict = {
     "Forestry": forestry_sf,
     "Purpose Grown Energy Crops": crop_sf
+}
+
+livestock_sf_dict = {
+    "Sheep and Lambs" : 0.3,
+    "Calves (under 1 year)" : 0.82,
+    "Dairy cows" : 0.82,
+    "Steers (1 year and over)": 0.82,
+    "Bulls" : 0.5,
+    "Beef heifers" : 0.5,
+    "Dairy heifers" : 0.8,
+    "Boars" : 1,
+    "Slaughter heifers" : 0.6,
+    "Sows and gilts" : 1,
+    "Pigs" : 1,
+    "Beef cows" : 0.5,
 }
 
 filtered_df = df[
@@ -75,6 +90,11 @@ filtered_df["Sustainable Removal Factor"] = (
 filtered_df["Sustainable Potential"] = (
     filtered_df["Production Volume"]
     * filtered_df["Sustainable Removal Factor"]
+)
+
+livestock_rows = filtered_df["Category"] == "Livestock Residue"
+filtered_df.loc[livestock_rows, "Sustainable Removal Factor"] = (
+    filtered_df.loc[livestock_rows, "SubCategory"].map(livestock_sf_dict)
 )
 
 fig = px.bar(
