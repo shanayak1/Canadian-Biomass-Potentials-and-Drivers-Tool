@@ -44,7 +44,7 @@ sf_dict = {}
 
 st.sidebar.subheader("Sustainable Removal Factors (%):")
 
-if "Forestry Biomass Residue" in selected_categories:
+if "Forestry Residue" in selected_categories:
     forestry_sf = st.sidebar.slider(
         "Forestry Residue Factor",
         min_value = 46.00,
@@ -52,7 +52,7 @@ if "Forestry Biomass Residue" in selected_categories:
         value = 59.0,
         step = 1.0
     )
-    sf_dict["Forestry Biomass Residue"] = forestry_sf
+    sf_dict["Forestry Residue"] = forestry_sf
 
 sf_dict["Forestry Biomass"] = 1.0
 
