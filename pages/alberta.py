@@ -87,14 +87,15 @@ filtered_df["Sustainable Removal Factor"] = (
     filtered_df["Category"].map(sf_dict)
 )
 
+livestock_rows = filtered_df["Category"] == "Livestock Residue"
+
+filtered_df.loc[livestock_rows, "Sustainable Removal Factor"] = (
+    filtered_df.loc[livestock_rows, "SubCategory"].map(livestock_sf_dict)
+)
+
 filtered_df["Sustainable Potential"] = (
     filtered_df["Production Volume"]
     * filtered_df["Sustainable Removal Factor"]
-)
-
-livestock_rows = filtered_df["Category"] == "Livestock Residue"
-filtered_df.loc[livestock_rows, "Sustainable Removal Factor"] = (
-    filtered_df.loc[livestock_rows, "SubCategory"].map(livestock_sf_dict)
 )
 
 fig = px.bar(
