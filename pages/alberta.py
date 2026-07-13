@@ -41,25 +41,40 @@ selected_subcategories = st.sidebar.multiselect(
     default = subcategories
 )
 
-
-selected_sf = st.sidebar.slider(
-    "Sustainable Removal Factor",
-    min_value = 0.0,
-    max_value = 3.0,
-    value = 1.50,
-    step = 0.10
+forestry_sf = st.sidebar.slider(
+    "Forestry Sustainable Removal Factor",
+    min_value = 46.00,
+    max_value = 72.00,
+    value = 59.0,
+    step = 1.0
 )
+
+crop_sf = st.sidebar.slider(
+    "Purpose Grown Energy Crops Sustainable Removal Factor",
+    min_value = 25.00,
+    max_value = 50.00,
+    value = 32.0,
+    step = 1.0
+)
+
+sf_dict = {
+    "Forestry": forestry_sf,
+    "Purpose Grown Energy Crops": crop_sf
+}
 
 filtered_df = df[
     (df["Category"].isin(selected_categories))
     &
     (df["SubCategory"].isin(selected_subcategories))
-    
 ].copy()
+
+filtered_df["Sustainable Removal Factor"] = (
+    filtered_df["Category"].map(sf_dict)
+)
 
 filtered_df["Sustainable Potential"] = (
     filtered_df["Production Volume"]
-    * selected_sf
+    * filtered_df["Sustainable Removal Factor"]
 )
 
 fig = px.bar(
