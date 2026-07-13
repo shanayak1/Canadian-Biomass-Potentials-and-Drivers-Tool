@@ -44,22 +44,24 @@ sf_dict = {}
 
 st.sidebar.subheader("Sustainable Removal Factors (%):")
 
-if "Forestry" in selected_categories:
+if "Forestry Biomass Residue" in selected_categories:
     forestry_sf = st.sidebar.slider(
-        "Forestry Factor",
+        "Forestry Residue Factor",
         min_value = 46.00,
         max_value = 72.00,
         value = 59.0,
         step = 1.0
     )
-    sf_dict["Forestry"] = forestry_sf
+    sf_dict["Forestry Biomass Residue"] = forestry_sf
+
+sf_dict["Forestry Biomass"] = 1.0
 
 crops_dict = {}
 
-if "Purpose Grown Energy Crops" in selected_categories:
+if "Crop Residue" in selected_categories:
     if "Wheat" in selected_subcategories:
         wheat_sf = st.sidebar.slider(
-            "Wheat Factor",
+            "Wheat Residue Factor",
             min_value = 25.0,
             max_value = 50.0,
             value = 37.0,
@@ -68,7 +70,7 @@ if "Purpose Grown Energy Crops" in selected_categories:
         crops_dict["Wheat"] = wheat_sf
     if "Canola" in selected_subcategories:
         canola_sf = st.sidebar.slider(
-            "Canola Factor",
+            "Canola Residue Factor",
             min_value = 30.0,
             max_value = 50.0,
             value = 40.0,
@@ -77,7 +79,7 @@ if "Purpose Grown Energy Crops" in selected_categories:
         crops_dict["Canola"] = canola_sf
     if "Barley" in selected_subcategories:
         barley_sf = st.sidebar.slider(
-            "Barley Factor",
+            "Barley Residue Factor",
             min_value = 25.0,
             max_value = 50.0,
             value = 37.0,
@@ -86,7 +88,7 @@ if "Purpose Grown Energy Crops" in selected_categories:
         crops_dict["Barley"] = barley_sf
     if "Lentils" in selected_subcategories:
         lentil_sf = st.sidebar.slider(
-            "Lentils Factor",
+            "Lentils Residue Factor",
             min_value = 25.0,
             max_value = 40.0,
             value = 32.0,
@@ -95,76 +97,76 @@ if "Purpose Grown Energy Crops" in selected_categories:
         crops_dict["Lentils"] = lentil_sf
     if "Corn" in selected_subcategories:
         corn_sf = st.sidebar.slider(
-            "Corn Factor",
+            "Corn Residue Factor",
             min_value = 30.0,
             max_value = 60.0,
             value = 45.0,
             step = 1.0,
         )
         crops_dict["Corn"] = corn_sf
-    if "oats" in selected_subcategories:
+    if "Oats" in selected_subcategories:
         oat_sf = st.sidebar.slider(
-            "Oats Factor",
+            "Oats Residue Factor",
             min_value = 30.0,
             max_value = 50.0,
             value = 40.0,
             step = 1.0,
         )
-        crops_dict["oats"] = oat_sf
-    if "soybean" in selected_subcategories:
+        crops_dict["Oats"] = oat_sf
+    if "Soybean" in selected_subcategories:
         soybean_sf = st.sidebar.slider(
-            "Soybean Factor",
+            "Soybean Residue Factor",
             min_value = 25.0,
             max_value = 50.0,
             value = 37.0,
             step = 1.0,
         )
-        crops_dict["soybean"] = soybean_sf
-    if "rye" in selected_subcategories:
+        crops_dict["Soybean"] = soybean_sf
+    if "Rye" in selected_subcategories:
         rye_sf = st.sidebar.slider(
-            "Rye Factor",
+            "Rye Residue Factor",
             min_value = 30.0,
             max_value = 50.0,
             value = 40.0,
             step = 1.0,
         )
-        crops_dict["rye"] = rye_sf
-    if "dry beans" in selected_subcategories:
+        crops_dict["Rye"] = rye_sf
+    if "Dry Beans" in selected_subcategories:
         dry_sf = st.sidebar.slider(
-            "Dry Beans Factor",
+            "Dry Beans Residue Factor",
             min_value = 25.0,
             max_value = 40.0,
             value = 32.0,
             step = 1.0,
         )
-        crops_dict["dry beans"] = dry_sf
-    if "flaxseed" in selected_subcategories:
+        crops_dict["Dry Beans"] = dry_sf
+    if "Flaxseed" in selected_subcategories:
         flaxseed_sf = st.sidebar.slider(
-            "Flaxseed Factor",
+            "Flaxseed Residue Factor",
             min_value = 30.0,
             max_value = 40.0,
             value = 35.0,
             step = 1.0,
         )
-        crops_dict["flaxseed"] = flaxseed_sf
-    if "dry peas" in selected_subcategories:
+        crops_dict["Flaxseed"] = flaxseed_sf
+    if "Dry Peas" in selected_subcategories:
         peas_sf = st.sidebar.slider(
-            "Dry Peas Factor",
+            "Dry Peas Residue Factor",
             min_value = 25.0,
             max_value = 35.0,
             value = 30.0,
             step = 1.0,
         )
-        crops_dict["dry peas"] = peas_sf
-    if "mustard seed" in selected_subcategories:
+        crops_dict["Dry Peas"] = peas_sf
+    if "Mustard Seed" in selected_subcategories:
         mustard_sf = st.sidebar.slider(
-            "Mustard Seed Factor",
+            "Mustard Seed Residue Factor",
             min_value = 20.0,
             max_value = 40.0,
             value = 30.0,
             step = 1.0,
         )
-        crops_dict["mustard seed"] = mustard_sf
+        crops_dict["Mustard Seed"] = mustard_sf
 
 livestock_sf_dict = {
     "Sheep and Lambs" : 0.3,
@@ -213,7 +215,7 @@ filtered_df.loc[urban_rows, "Sustainable Removal Factor"] = (
 )
 
 #sub in new crop sus factors
-crop_rows = filtered_df["Category"] == "Purpose Grown Energy Crops"
+crop_rows = filtered_df["Category"] == "Crop Residue"
 filtered_df.loc[crop_rows, "Sustainable Removal Factor"] = (
     filtered_df.loc[crop_rows, "SubCategory"].map(crops_dict)
 )

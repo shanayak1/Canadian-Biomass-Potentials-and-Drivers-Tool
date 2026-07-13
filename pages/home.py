@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Biomass Potentials and Drivers Tool")
+st.title("Biomass Potentials Tool")
 
 st.subheader("A Brief Introduction and Methodology")
 
