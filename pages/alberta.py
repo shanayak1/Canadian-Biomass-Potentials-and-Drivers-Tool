@@ -69,20 +69,102 @@ if "Purpose Grown Energy Crops" in selected_categories:
     if "Canola" in selected_subcategories:
         canola_sf = st.sidebar.slider(
             "Canola Factor",
+            min_value = 30.0,
+            max_value = 50.0,
+            value = 40.0,
+            step = 1.0,
+        )
+        crops_dict["Canola"] = canola_sf
+    if "Barley" in selected_subcategories:
+        barley_sf = st.sidebar.slider(
+            "Barley Factor",
             min_value = 25.0,
             max_value = 50.0,
             value = 37.0,
             step = 1.0,
         )
-        crops_dict["Canola"] = canola_sf
-    #crop_sf = st.sidebar.slider(
-        #"Purpose Grown Energy Crops Factor",
-        #min_value = 25.00,
-        #max_value = 50.00,
-        #value = 32.0,
-        #step = 1.0
-    #)
-    #sf_dict["Purpose Grown Energy Crops"] = crop_sf
+        crops_dict["Barley"] = barley_sf
+    if "Lentils" in selected_subcategories:
+        lentil_sf = st.sidebar.slider(
+            "Lentils Factor",
+            min_value = 25.0,
+            max_value = 40.0,
+            value = 32.0,
+            step = 1.0,
+        )
+        crops_dict["Lentils"] = lentil_sf
+    if "Corn" in selected_subcategories:
+        corn_sf = st.sidebar.slider(
+            "Corn Factor",
+            min_value = 30.0,
+            max_value = 60.0,
+            value = 45.0,
+            step = 1.0,
+        )
+        crops_dict["Corn"] = corn_sf
+    if "oats" in selected_subcategories:
+        oat_sf = st.sidebar.slider(
+            "Oats Factor",
+            min_value = 30.0,
+            max_value = 50.0,
+            value = 40.0,
+            step = 1.0,
+        )
+        crops_dict["oats"] = oat_sf
+    if "soybean" in selected_subcategories:
+        soybean_sf = st.sidebar.slider(
+            "Soybean Factor",
+            min_value = 25.0,
+            max_value = 50.0,
+            value = 37.0,
+            step = 1.0,
+        )
+        crops_dict["soybean"] = soybean_sf
+    if "rye" in selected_subcategories:
+        rye_sf = st.sidebar.slider(
+            "Rye Factor",
+            min_value = 30.0,
+            max_value = 50.0,
+            value = 40.0,
+            step = 1.0,
+        )
+        crops_dict["rye"] = rye_sf
+    if "dry beans" in selected_subcategories:
+        dry_sf = st.sidebar.slider(
+            "Dry Beans Factor",
+            min_value = 25.0,
+            max_value = 40.0,
+            value = 32.0,
+            step = 1.0,
+        )
+        crops_dict["dry beans"] = dry_sf
+    if "flaxseed" in selected_subcategories:
+        flaxseed_sf = st.sidebar.slider(
+            "Flaxseed Factor",
+            min_value = 30.0,
+            max_value = 40.0,
+            value = 35.0,
+            step = 1.0,
+        )
+        crops_dict["flaxseed"] = flaxseed_sf
+    if "dry peas" in selected_subcategories:
+        peas_sf = st.sidebar.slider(
+            "Dry Peas Factor",
+            min_value = 25.0,
+            max_value = 35.0,
+            value = 30.0,
+            step = 1.0,
+        )
+        crops_dict["dry peas"] = peas_sf
+    if "mustard seed" in selected_subcategories:
+        mustard_sf = st.sidebar.slider(
+            "Mustard Seed Factor",
+            min_value = 20.0,
+            max_value = 40.0,
+            value = 30.0,
+            step = 1.0,
+        )
+        crops_dict["mustard seed"] = mustard_sf
 
 livestock_sf_dict = {
     "Sheep and Lambs" : 0.3,
