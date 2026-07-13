@@ -10,7 +10,7 @@ st.set_page_config(page_title = "Alberta Biomass Potentials and Availability Dat
                    layout="wide")
 
 st.header('Alberta Biomass Potentials and Availability Data')
-st.subheader('subtitle')
+st.subheader('Current Availability as of 2025')
 
 #load dataframe so our excel worksheet data
 excel_file = 'data.xlsx'
@@ -71,3 +71,5 @@ fig = px.bar(
 )
 
 st.plotly_chart(fig, use_container_width = True)
+
+st.subheader('Future Biomass Availability Prediction')
