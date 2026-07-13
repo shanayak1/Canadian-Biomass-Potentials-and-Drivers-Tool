@@ -8,27 +8,27 @@ home_page = st.Page(
     default = True,
 )
 
-potential_page = st.Page(
-    page="pages/potential.py",
-    title = "Biomass Potentials",
+alberta_page = st.Page(
+    page="pages/alberta.py",
+    title = "Albertan Biomass",
     icon = ":material/bar_chart:",
 )
 
 bc_page = st.Page(
     page = "pages/bc.py",
-    title = "British Columbia",
+    title = "British Columbian Biomass",
     icon = ":material/bar_chart:",
 )
 
 #navigation menu
 
-pg = st.navigation(pages=[home_page, potential_page])
+pg = st.navigation(pages=[home_page, alberta_page])
 
 # navigation with sections
 pg = st.navigation(
     {
         "Introductions": [home_page],
-        "Alberta": [potential_page],
+        "Alberta": [alberta_page],
         "British Columbia": [bc_page],
     }
 )
