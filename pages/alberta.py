@@ -54,15 +54,35 @@ if "Forestry" in selected_categories:
     )
     sf_dict["Forestry"] = forestry_sf
 
+crops_dict = {}
+
 if "Purpose Grown Energy Crops" in selected_categories:
-    crop_sf = st.sidebar.slider(
-        "Purpose Grown Energy Crops Factor",
-        min_value = 25.00,
-        max_value = 50.00,
-        value = 32.0,
-        step = 1.0
-    )
-    sf_dict["Purpose Grown Energy Crops"] = crop_sf
+    if "Wheat" in selected_subcategories:
+        wheat_sf = st.sidebar.slider(
+            "Wheat Factor",
+            min_value = 25.0,
+            max_value = 50.0,
+            value = 37.0,
+            step = 1.0,
+        )
+        crops_dict["Wheat"] = wheat_sf
+    if "Canola" in selected_subcategories:
+        canola_sf = st.sidebar.slider(
+            "Canola Factor",
+            min_value = 25.0,
+            max_value = 50.0,
+            value = 37.0,
+            step = 1.0,
+        )
+        crops_dict["Canola"] = canola_sf
+    #crop_sf = st.sidebar.slider(
+        #"Purpose Grown Energy Crops Factor",
+        #min_value = 25.00,
+        #max_value = 50.00,
+        #value = 32.0,
+        #step = 1.0
+    #)
+    #sf_dict["Purpose Grown Energy Crops"] = crop_sf
 
 livestock_sf_dict = {
     "Sheep and Lambs" : 0.3,
@@ -111,8 +131,10 @@ filtered_df.loc[urban_rows, "Sustainable Removal Factor"] = (
 )
 
 #sub in new crop sus factors
-
-
+crop_rows = filtered_df["Category"] == "Purpose Grown Energy Crops"
+filtered_df.loc[crop_rows, "Sustainable Removal Factor"] = (
+    filtered_df.loc[crop_rows, "SubCategory"].map(crops_dict)
+)
 
 #calculate all sustainable potentials
 filtered_df["Sustainable Potential"] = (
