@@ -42,9 +42,11 @@ selected_subcategories = st.sidebar.multiselect(
 
 sf_dict = {}
 
+st.sidebar.subheader("Sustainable Removal Factors (%):")
+
 if "Forestry" in selected_categories:
     forestry_sf = st.sidebar.slider(
-        "Forestry Sustainable Removal Factor",
+        "Forestry Factor",
         min_value = 46.00,
         max_value = 72.00,
         value = 59.0,
@@ -54,7 +56,7 @@ if "Forestry" in selected_categories:
 
 if "Purpose Grown Energy Crops" in selected_categories:
     crop_sf = st.sidebar.slider(
-        "Purpose Grown Energy Crops Sustainable Removal Factor",
+        "Purpose Grown Energy Crops Factor",
         min_value = 25.00,
         max_value = 50.00,
         value = 32.0,
@@ -77,6 +79,11 @@ livestock_sf_dict = {
     "Beef cows" : 0.5,
 }
 
+urban_waste_dict = {
+    "Sewage" : 0.9,
+    "Biosolids" : 0.9,
+}
+
 #filter all the rows to only have selected categories/subcategories
 filtered_df = df[
     (df["Category"].isin(selected_categories))
@@ -92,12 +99,20 @@ filtered_df["Sustainable Removal Factor"] = (
 #sub in the new livestock sus factor
 livestock_rows = filtered_df["Category"] == "Livestock Residue"
 
-#sub in new crop sus factor
-
 #sub in livestock factor into dataframe
 filtered_df.loc[livestock_rows, "Sustainable Removal Factor"] = (
     filtered_df.loc[livestock_rows, "SubCategory"].map(livestock_sf_dict)
 )
+
+#sub in new urban waste sus factor
+urban_rows = filtered_df["Category"] == "Urban Waste"
+filtered_df.loc[urban_rows, "Sustainable Removal Factor"] = (
+    filtered_df.loc[urban_rows, "SubCategory"].map(urban_waste_dict)
+)
+
+#sub in new crop sus factors
+
+
 
 #calculate all sustainable potentials
 filtered_df["Sustainable Potential"] = (
