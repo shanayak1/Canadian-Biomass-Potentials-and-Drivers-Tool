@@ -30,14 +30,20 @@ with st.container(border=True):
     st.write("Livestock Residues")   
 
 #create columns
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4, col5, col6 = st.columns(6)
 
 with col1:
-    if st.button("Crop Yield"):
-        st.session_state.selected_driver = "Crop Yield"
+    st.button("Political", use_container_width = True)
 with col2:
-    if st.button("City Population"):
-        st.session_state.selected_driver = "City Population"
+    st.button("Environmental", use_container_width = True)
+with col3:
+    st.button("Social", use_container_width = True)
+with col4:
+    st.button("Technological", use_container_width = True)
+with col5:
+    st.button("Eco", use_container_width = True)
+with col6:
+    st.button("Legal", use_container_width = True)
 
 if "selected_driver" not in st.session_state:
     st.session_state.selected_driver = None
