@@ -129,9 +129,11 @@ with t3:
                 st.markdown("""
             Crop yield is ___ and __ and influenced by _______.
                             
+                            
             **As a Driver of Biomass Potential and Bioconversion**
             
             Higher crop yields directly increase the amount of biomass produced.
+                            
                             
             **Explore further literature**
                             
