@@ -124,6 +124,16 @@ with t3:
             st.markdown("Livestock Residue")
         with right:
             with st.popover("Livestock Population"):
+                st.markdown("""
+                <style>
+                div[data-testid="stPopover"] button {
+                    background:#3E7D20;
+                    color:white;
+                    border-radius:12px;
+                    font-weight:bold;
+                }
+                </style>
+                """, unsafe_allow_html=True)
                 st.subheader("Livestock Population")
                 st.caption("Type: Social")
                 st.markdown("""
