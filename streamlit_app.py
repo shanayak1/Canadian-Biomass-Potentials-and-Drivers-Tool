@@ -10,13 +10,13 @@ home_page = st.Page(
 
 alberta_page = st.Page(
     page="pages/alberta.py",
-    title = "Albertan Biomass",
+    title = "Biomass Potential",
     icon = ":material/bar_chart:",
 )
 
 bc_page = st.Page(
     page = "pages/bc.py",
-    title = "British Columbian Biomass",
+    title = "Biomass Potential",
     icon = ":material/bar_chart:",
 )
 
