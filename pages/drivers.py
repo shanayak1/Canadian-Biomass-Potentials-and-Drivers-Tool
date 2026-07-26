@@ -28,4 +28,24 @@ with col2:
     if st.button("City Population"):
         st.session_state.selected_driver = "City Population"
 
+if "selected_driver" not in st.session_state:
+    st.session_state.selected_driver = None
 
+if st.button("Crop Yield"):
+    st.session_state.selected_driver = "Crop Yield"
+
+#create popup display
+if st.session_state.selected_driver == "Crop Yield":
+    with st.container(border = True):
+        st.subheader("Crop Yield")
+        st.caption ("Environmental")
+        st.write("Crop yield is ______")
+
+tabs = st.tabs([
+    "Political",
+    "Environmental",
+    "Social",
+    "Technological",
+    "Ecological",
+    "Legal",
+])
