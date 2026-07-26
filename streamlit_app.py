@@ -20,6 +20,12 @@ bc_page = st.Page(
     icon = ":material/bar_chart:",
 )
 
+drivers_page = st.Page(
+    page = "pages/drivers.py",
+    title = "Biomass Drivers",
+    icon = ":material/bar_chart:",
+)
+
 #navigation menu
 
 pg = st.navigation(pages=[home_page, alberta_page])
@@ -30,6 +36,7 @@ pg = st.navigation(
         "Introductions": [home_page],
         "Alberta": [alberta_page],
         "British Columbia": [bc_page],
+        "Biomass Drivers": [drivers_page],
     }
 )
 
