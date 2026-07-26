@@ -16,7 +16,6 @@ if "selected_driver" not in st.session_state:
     st.session_state.selected_driver = None
 
 #create pestel tabs
-
 t1, t2, t3, t4, t5, t6 = st.tabs(["Political", "Economic", "Social", "Technological", "Environmental", "Legal"])
 
 with t6:
@@ -30,8 +29,6 @@ with t6:
         left, right = st.columns([2,6])
         with left:
             st.markdown("Agricultural Biomass and Residues")
-            # with right:
-            #     c1 = st.columns(1)
                 
     with st.container(border=True):
         left, right = st.columns([2,6])
@@ -117,23 +114,25 @@ with t3:
         left, right = st.columns([2,6])
         with left:
             st.markdown("Forestry Biomass and Residues")
-            # with right:
-            #     c1 = st.columns(1)
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
             st.markdown("Agricultural Biomass and Residues")
-            # with right:
-            #     c1 = st.columns(1)
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
             st.markdown("Livestock Residue")
         with right:
-                # c1 = st.columns(1)
-                # with c1:
             with st.popover("Livestock Population"):
-                st.markdown("some text here")
+                st.subheader("Livestock Population")
+                st.caption("Type: Social")
+                st.markdown("""
+            Crop yield is ___ and __ and influenced by _______.
+            **As a Driver of Biomass Potential and Bioconversion**
+            Higher crop yields directly increase the amount of biomass produced.
+            ** Explore further literature**
+            insert links here """)
+                #st.markdown("some text here")
 with t2:
     with st.container(border=True):
         left, right = st.columns([2,6])
