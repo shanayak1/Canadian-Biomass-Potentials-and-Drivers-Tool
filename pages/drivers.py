@@ -60,8 +60,10 @@ with st.container(border=True):
             with st.popover("smth"):
                 st.markdown("some text here")
         with c5:
-            with st.popover("smth"):
+            with st.popover("Afforestation"):
                 st.markdown("some text here")
+            with st.popover("Deforestation"):
+                st.markdown("a description")
         with c6:
             with st.popover("smth"):
                 st.markdown("some text here")
@@ -111,9 +113,9 @@ with st.container(border=True):
             with st.popover("Population"):
                 st.markdown("some text here")
             #st.button("Population", key = "eight")
-        #with c3:
-            #with st.popover("Forest Area"):
-                #st.markdown("some text here")
+        with c3:
+            with st.popover("Forest Area"):
+                st.markdown("some text here")
             #st.button("Forest Area", key = "nine")
         with c4:
             with st.popover("smth"):
