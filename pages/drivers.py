@@ -10,6 +10,16 @@ st.set_page_config(page_title = "Biomass Potentials and Availibility Drivers",
 st.header('Biomass Potential and Availibility Drivers')
 st.subheader('Key Drivers:')
 
+
+tabs = st.tabs([
+    "Political",
+    "Environmental",
+    "Social",
+    "Technological",
+    "Ecological",
+    "Legal",
+])
+
 #create rows using a container
 with st.container(border=True):
     st.write("Forestry Biomass and Residues")
@@ -38,11 +48,3 @@ if st.session_state.selected_driver == "Crop Yield":
         st.caption ("Environmental")
         st.write("Crop yield is ______")
 
-tabs = st.tabs([
-    "Political",
-    "Environmental",
-    "Social",
-    "Technological",
-    "Ecological",
-    "Legal",
-])
