@@ -73,7 +73,6 @@ with st.container(border=True):
         with c3:
             st.button("Forest Area", key = "nine")
 
-st.write("")
 st.markdown("---")
 st.subheader("Driver Information")
 
@@ -85,9 +84,6 @@ with st.container(border = True):
         st.caption("Type: Environmental")
         st.write("Crop yield is influenced by ___")
 
-
-
-#create popup display
-#with st.popover("Crop Y"):
-    #st.markdown("WORDS HERE")
+with st.popover("Crop Yield"):
+    st.markdown("some text here")
 
