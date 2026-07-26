@@ -315,6 +315,14 @@ with t1:
         #         #st.markdown("some text here")
         #         st.write()
 
+
+selected = st.segmented_control(
+    "",
+    ["Political", "Economic", "Social", "Tech", "Eco", "Legal"]
+)
+
+
+
 st.markdown("---")
 st.subheader("Driver Information")
 
