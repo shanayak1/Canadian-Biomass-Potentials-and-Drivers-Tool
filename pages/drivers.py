@@ -24,13 +24,13 @@ with pestel_tabs:
     with col1:
         st.button("Political", use_container_width = True)
     with col2:
-        st.button("Environmental", use_container_width = True)
+        st.button("Economic", use_container_width = True)
     with col3:
         st.button("Social", use_container_width = True)
     with col4:
         st.button("Technological", use_container_width = True)
     with col5:
-        st.button("Eco", use_container_width = True)
+        st.button("Environmental", use_container_width = True)
     with col6:
         st.button("Legal", use_container_width = True)
 
