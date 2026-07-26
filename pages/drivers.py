@@ -45,6 +45,33 @@ with t5:
         with c5:
             with st.popover("Disease"):
                 st.markdown("description")
+    with st.container(border=True):
+        left, right = st.columns([2,6])
+        with left:
+            st.markdown("Agricultural Biomass and Residues")
+        with right:
+            c1, c2, c3, c4, c5 = st.columns(5)
+            with c1:
+                with st.popover("Crop Yield"):
+                    st.markdown("some text here")
+            with c2:
+                with st.popover("Cropland"):
+                    st.markdown("a description")
+            with c3:
+                with st.popover("Land Availability"):
+                    st.markdown("description")
+            with c4:
+                with st.popover("Extreme Weather"):
+                    st.markdown("description")
+            with c5:
+                with st.popover("Climate Change"):
+                    st.markdown("description")
+    with st.container(border=True):
+        left, right = st.columns([2,6])
+        with left:
+            st.markdown("Livestock Residues")
+        with right:
+            c1, c2, c3, c4, c5, c6 = st.columns(6)
 
 
 # with pestel_tabs:
