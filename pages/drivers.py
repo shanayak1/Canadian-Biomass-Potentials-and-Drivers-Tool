@@ -38,14 +38,18 @@ with st.container(border=True):
     with right:
         c1, c2, c3 = st.columns(3)
         with c1:
-            if st.button("Crop Yield", key = "one"):
-                st.session_state.selected_driver = "Crop Yield"
+            with st.popover("Crop Yield"):
+                st.markdown("some words here")
+            #if st.button("Crop Yield", key = "one"):
+                #st.session_state.selected_driver = "Crop Yield"
         with c2:
             with st.popover("Population"):
                 st.markdown("some text here")
             #st.button("Population", key = "two")
         with c3:
-            st.button("Forest Area", key = "three")
+            with st.popover("Forest Area"):
+                st.markdown("some text here")
+            #st.button("Forest Area", key = "three")
 
 with st.container(border=True):
     left, right = st.columns([2,6])
@@ -55,11 +59,17 @@ with st.container(border=True):
     with right:
         c1, c2, c3 = st.columns(3)
         with c1:
-            st.button("Crop Yield", key = "four")
+            with st.popover("Crop Yield"):
+                st.markdown("some words here")
+            #st.button("Crop Yield", key = "four")
         with c2:
-            st.button("Population", key = "five")
+            with st.popover("Population"):
+                st.markdown("some text here")
+            #st.button("Population", key = "five")
         with c3:
-            st.button("Forest Area", key = "six")
+            with st.popover("Forest Area"):
+                st.markdown("some text here")
+            #st.button("Forest Area", key = "six")
 
 with st.container(border=True):
     left, right = st.columns([2,6])
@@ -69,11 +79,17 @@ with st.container(border=True):
     with right:
         c1, c2, c3 = st.columns(3)
         with c1:
-            st.button("Crop Yield", key = "seven")
+            with st.popover("Crop Yield"):
+                st.markdown("some words here")
+            #st.button("Crop Yield", key = "seven")
         with c2:
-            st.button("Population", key = "eight")
+            with st.popover("Population"):
+                st.markdown("some text here")
+            #st.button("Population", key = "eight")
         with c3:
-            st.button("Forest Area", key = "nine")
+            with st.popover("Forest Area"):
+                st.markdown("some text here")
+            #st.button("Forest Area", key = "nine")
 
 st.markdown("---")
 st.subheader("Driver Information")
