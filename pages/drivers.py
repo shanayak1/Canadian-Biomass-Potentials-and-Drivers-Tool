@@ -8,4 +8,11 @@ st.set_page_config(page_title = "Biomass Potentials and Availibility Drivers",
                    layout="wide")
 
 st.header('Biomass Potential and Availibility Drivers')
-st.subheader('subheader')
+st.subheader('Key Drivers')
+
+with st.container(border=True):
+    st.write("Forestry Biomass and Residues")
+with st.container(border=True):
+    st.write("Agricultural Biomass and Residues")
+with st.container(border=True):
+    st.write("Livestock Residues")   
