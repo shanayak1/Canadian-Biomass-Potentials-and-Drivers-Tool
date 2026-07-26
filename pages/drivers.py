@@ -14,19 +14,25 @@ if "selected_driver" not in st.session_state:
     st.session_state.selected_driver = None
 
 #create columns
-col1, col2, col3, col4, col5, col6 = st.columns(6)
-with col1:
-    st.button("Political", use_container_width = True)
-with col2:
-    st.button("Environmental", use_container_width = True)
-with col3:
-    st.button("Social", use_container_width = True)
-with col4:
-    st.button("Technological", use_container_width = True)
-with col5:
-    st.button("Eco", use_container_width = True)
-with col6:
-    st.button("Legal", use_container_width = True)
+empty_space, pestel_tabs = st.columns([2,6])
+
+with empty_space:
+    st.write("")
+
+with pestel_tabs:
+    col1, col2, col3, col4, col5, col6 = st.columns(6)
+    with col1:
+        st.button("Political", use_container_width = True)
+    with col2:
+        st.button("Environmental", use_container_width = True)
+    with col3:
+        st.button("Social", use_container_width = True)
+    with col4:
+        st.button("Technological", use_container_width = True)
+    with col5:
+        st.button("Eco", use_container_width = True)
+    with col6:
+        st.button("Legal", use_container_width = True)
 
 
 #create rows using a container
