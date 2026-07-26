@@ -31,9 +31,6 @@ with col2:
 if "selected_driver" not in st.session_state:
     st.session_state.selected_driver = None
 
-if st.button("Crop Yield"):
-    st.session_state.selected_driver = "Crop Yield"
-
 #create popup display
 if st.session_state.selected_driver == "Crop Yield":
     with st.container(border = True):
