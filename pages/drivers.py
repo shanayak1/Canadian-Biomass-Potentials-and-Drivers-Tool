@@ -44,5 +44,5 @@ if "selected_driver" not in st.session_state:
 
 #create popup display
 with st.popover("Crop Y"):
-    st.write("WORDS HERE")
+    st.markdown("WORDS HERE")
 
