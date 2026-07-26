@@ -22,7 +22,7 @@ bc_page = st.Page(
 
 drivers_page = st.Page(
     page = "pages/drivers.py",
-    title = "Biomass Drivers",
+    title = "Biomass Potentials and Availibility Drivers",
     icon = ":material/bar_chart:",
 )
 
