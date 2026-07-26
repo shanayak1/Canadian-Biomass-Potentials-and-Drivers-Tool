@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.express as px
 from PIL import Image
 
+#configure the page setup
 st.set_page_config(page_title = "Biomass Potentials and Availibility Drivers",
                    page_icon = ":bar_chart:",
                    layout="wide")
@@ -10,29 +11,56 @@ st.set_page_config(page_title = "Biomass Potentials and Availibility Drivers",
 st.header('Biomass Potential and Availibility Drivers')
 st.subheader('Key Drivers:')
 
+#set session state
 if "selected_driver" not in st.session_state:
     st.session_state.selected_driver = None
 
-#create columns
+#create pestel tabs
 empty_space, pestel_tabs = st.columns([2,6])
 
 with empty_space:
     st.write("")
 
-with pestel_tabs:
-    col1, col2, col3, col4, col5, col6 = st.columns(6)
-    with col1:
-        st.button("Political", use_container_width = True)
-    with col2:
-        st.button("Economic", use_container_width = True)
-    with col3:
-        st.button("Social", use_container_width = True)
-    with col4:
-        st.button("Technological", use_container_width = True)
-    with col5:
-        st.button("Environmental", use_container_width = True)
-    with col6:
-        st.button("Legal", use_container_width = True)
+t1, t2, t3, t4, t5, t6 = st.tabs(["Political", "Economic", "Social", "Technological", "Environmental", "Legal"])
+
+with t5:
+    with st.container(border=True):
+        left, right = st.columns([2,6])
+    with left:
+        st.markdown("Forestry Biomass and Residues")
+    with right:
+        c1, c2, c3, c4, c5 = st.columns(5)
+        with c1:
+            with st.popover("Afforestation"):
+                st.markdown("some text here")
+        with c2:
+            with st.popover("Deforestation"):
+                st.markdown("a description")
+        with c3:
+            with st.popover("Land Availability"):
+                st.markdown("description")
+        with c4:
+            with st.popover("Forest Fire"):
+                st.markdown("description")
+        with c5:
+            with st.popover("Disease"):
+                st.markdown("description")
+
+
+# with pestel_tabs:
+#     col1, col2, col3, col4, col5, col6 = st.columns(6)
+#     with col1:
+#         st.button("Political", use_container_width = True)
+#     with col2:
+#         st.button("Economic", use_container_width = True)
+#     with col3:
+#         st.button("Social", use_container_width = True)
+#     with col4:
+#         st.button("Technological", use_container_width = True)
+#     with col5:
+#         st.button("Environmental", use_container_width = True)
+#     with col6:
+#         st.button("Legal", use_container_width = True)
 
 
 #create rows using a container
