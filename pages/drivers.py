@@ -111,9 +111,9 @@ with st.container(border=True):
             with st.popover("Population"):
                 st.markdown("some text here")
             #st.button("Population", key = "eight")
-        with c3:
-            with st.popover("Forest Area"):
-                st.markdown("some text here")
+        #with c3:
+            #with st.popover("Forest Area"):
+                #st.markdown("some text here")
             #st.button("Forest Area", key = "nine")
         with c4:
             with st.popover("smth"):
