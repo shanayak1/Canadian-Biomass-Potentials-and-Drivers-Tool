@@ -43,7 +43,6 @@ with st.container(border=True):
         st.markdown("Forestry Biomass and Residues")
     with right:
         c1, c2, c3, c4, c5, c6 = st.columns(6)
-        
         with c1:
             #with st.popover("Crop Yield"):
                 #st.markdown("some words here")
