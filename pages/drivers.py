@@ -77,7 +77,7 @@ with st.container(border=True):
             #with st.popover("smth"):
                 #st.markdown("some text here")
             
-
+            st.write()
 with st.container(border=True):
     left, right = st.columns([2,6])
 
@@ -89,6 +89,7 @@ with st.container(border=True):
             #with st.popover("Crop Yield"):
                 #st.markdown("some words here")
             #st.button("Crop Yield", key = "four")
+            st.write()
         with c2:
             with st.popover("Cost"):
                 st.markdown("some text here")
@@ -97,6 +98,7 @@ with st.container(border=True):
             #with st.popover("Forest Area"):
                 #st.markdown("some text here")
             #st.button("Forest Area", key = "six")
+            st.write()
         with c4:
             with st.popover("Sustainable Removal Practices"):
                 st.markdown("some text here")
@@ -114,6 +116,7 @@ with st.container(border=True):
         with c6:
             #with st.popover("smth"):
                 #st.markdown("some text here")
+                st.write()
 
 with st.container(border=True):
     left, right = st.columns([2,6])
@@ -126,10 +129,12 @@ with st.container(border=True):
             #with st.popover("Crop Yield"):
                 #st.markdown("some words here")
             #st.button("Crop Yield", key = "seven")
+            st.write()
         with c2:
             #with st.popover("Population"):
                 #st.markdown("some text here")
             #st.button("Population", key = "eight")
+            st.write()
         with c3:
             with st.popover("Livestock Population"):
                 st.markdown("some text here")
@@ -137,12 +142,15 @@ with st.container(border=True):
         with c4:
             #with st.popover("smth"):
                 #st.markdown("some text here")
+                st.write()
         with c5:
             #with st.popover("smth"):
                 #st.markdown("some text here")
+                st.write()
         with c6:
             #with st.popover("smth"):
                 #st.markdown("some text here")
+                st.write()
 
 st.markdown("---")
 st.subheader("Driver Information")
