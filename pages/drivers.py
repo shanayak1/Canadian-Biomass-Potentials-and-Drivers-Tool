@@ -42,7 +42,7 @@ with st.container(border=True):
     with left:
         st.markdown("Forestry Biomass and Residues")
     with right:
-        c1, c2, c3 = st.columns(3)
+        c1, c2, c3, c4, c5, c6 = st.columns(6)
         with c1:
             with st.popover("Crop Yield"):
                 st.markdown("some words here")
@@ -56,6 +56,16 @@ with st.container(border=True):
             with st.popover("Forest Area"):
                 st.markdown("some text here")
             #st.button("Forest Area", key = "three")
+        with c4:
+            with st.popover("smth"):
+                st.markdown("some text here")
+        with c5:
+            with st.popover("smth"):
+                st.markdown("some text here")
+        with c6:
+            with st.popover("smth"):
+                st.markdown("some text here")
+            
 
 with st.container(border=True):
     left, right = st.columns([2,6])
@@ -63,7 +73,7 @@ with st.container(border=True):
     with left:
         st.markdown("Agricultural Biomass and Residues")
     with right:
-        c1, c2, c3 = st.columns(3)
+        c1, c2, c3, c4, c5, c6 = st.columns(6)
         with c1:
             with st.popover("Crop Yield"):
                 st.markdown("some words here")
@@ -76,6 +86,15 @@ with st.container(border=True):
             with st.popover("Forest Area"):
                 st.markdown("some text here")
             #st.button("Forest Area", key = "six")
+        with c4:
+            with st.popover("smth"):
+                st.markdown("some text here")
+        with c5:
+            with st.popover("smth"):
+                st.markdown("some text here")
+        with c6:
+            with st.popover("smth"):
+                st.markdown("some text here")
 
 with st.container(border=True):
     left, right = st.columns([2,6])
@@ -83,7 +102,7 @@ with st.container(border=True):
     with left:
         st.markdown("Livestock Residues")
     with right:
-        c1, c2, c3 = st.columns(3)
+        c1, c2, c3, c4, c5, c6 = st.columns(6)
         with c1:
             with st.popover("Crop Yield"):
                 st.markdown("some words here")
@@ -96,6 +115,15 @@ with st.container(border=True):
             with st.popover("Forest Area"):
                 st.markdown("some text here")
             #st.button("Forest Area", key = "nine")
+        with c4:
+            with st.popover("smth"):
+                st.markdown("some text here")
+        with c5:
+            with st.popover("smth"):
+                st.markdown("some text here")
+        with c6:
+            with st.popover("smth"):
+                st.markdown("some text here")
 
 st.markdown("---")
 st.subheader("Driver Information")
