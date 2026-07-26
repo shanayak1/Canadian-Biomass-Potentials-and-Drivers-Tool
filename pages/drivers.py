@@ -35,11 +35,11 @@ with st.container(border=True):
     with right:
         c1, c2, c3 = st.columns(3)
         with c1:
-            st.button("Crop Yield", key = "1")
+            st.button("Crop Yield", key = "one")
         with c2:
-            st.button("Population", key = "1")
+            st.button("Population", key = "two")
         with c3:
-            st.button("Forest Area", key = "1")
+            st.button("Forest Area", key = "three")
 
 with st.container(border=True):
     left, right = st.columns([2,6])
@@ -49,11 +49,11 @@ with st.container(border=True):
     with right:
         c1, c2, c3 = st.columns(3)
         with c1:
-            st.button("Crop Yield", key = "2")
+            st.button("Crop Yield", key = "four")
         with c2:
-            st.button("Population", key = "2")
+            st.button("Population", key = "five")
         with c3:
-            st.button("Forest Area", key = "2")
+            st.button("Forest Area", key = "six")
 
 with st.container(border=True):
     left, right = st.columns([2,6])
@@ -63,11 +63,11 @@ with st.container(border=True):
     with right:
         c1, c2, c3 = st.columns(3)
         with c1:
-            st.button("Crop Yield", key = "3")
+            st.button("Crop Yield", key = "seven")
         with c2:
-            st.button("Population", key = "3")
+            st.button("Population", key = "eight")
         with c3:
-            st.button("Forest Area", key = "3")
+            st.button("Forest Area", key = "nine")
 
 
 
