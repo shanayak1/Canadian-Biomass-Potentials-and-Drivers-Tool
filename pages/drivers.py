@@ -10,28 +10,8 @@ st.set_page_config(page_title = "Biomass Potentials and Availibility Drivers",
 st.header('Biomass Potential and Availibility Drivers')
 st.subheader('Key Drivers:')
 
-
-tabs = st.tabs([
-    "Political",
-    "Environmental",
-    "Social",
-    "Technological",
-    "Ecological",
-    "Legal",
-])
-
-#create rows using a container
-with st.container(border=True):
-    st.write("Forestry Biomass and Residues")
-    st.button("Crop Yield")
-with st.container(border=True):
-    st.write("Agricultural Biomass and Residues")
-with st.container(border=True):
-    st.write("Livestock Residues")   
-
 #create columns
 col1, col2, col3, col4, col5, col6 = st.columns(6)
-
 with col1:
     st.button("Political", use_container_width = True)
 with col2:
@@ -45,10 +25,55 @@ with col5:
 with col6:
     st.button("Legal", use_container_width = True)
 
-if "selected_driver" not in st.session_state:
-    st.session_state.selected_driver = None
+
+#create rows using a container
+with st.container(border=True):
+    left, right = st.columns([2,6])
+
+    with left:
+        st.markdown("Forestry Biomass and Residues")
+    with right:
+        c1, c2, c3 = st.columns(3)
+        with c1:
+            st.button("Crop Yield")
+        with c2:
+            st.button("Population")
+        with c3:
+            st.button("Forest Area")
+            
+with st.container(border=True):
+    left, right = st.columns([2,6])
+
+    with left:
+        st.markdown("Agricultural Biomass and Residues")
+    with right:
+        c1, c2, c3 = st.columns(3)
+        with c1:
+            st.button("Crop Yield")
+        with c2:
+            st.button("Population")
+        with c3:
+            st.button("Forest Area")
+
+with st.container(border=True):
+    left, right = st.columns([2,6])
+
+    with left:
+        st.markdown("Livestock Residues")
+    with right:
+        c1, c2, c3 = st.columns(3)
+        with c1:
+            st.button("Crop Yield")
+        with c2:
+            st.button("Population")
+        with c3:
+            st.button("Forest Area")
+
+
+
+
 
 #create popup display
-with st.popover("Crop Y"):
-    st.markdown("WORDS HERE")
+#with st.popover("Crop Y"):
+    #st.markdown("WORDS HERE")
 
