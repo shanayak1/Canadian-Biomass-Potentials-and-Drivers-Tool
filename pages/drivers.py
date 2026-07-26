@@ -43,37 +43,37 @@ with st.container(border=True):
         st.markdown("Forestry Biomass and Residues")
     with right:
         c1, c2, c3, c4, c5, c6 = st.columns(6)
-        with c1:
-            #with st.popover("Crop Yield"):
-                #st.markdown("some words here")
-            #if st.button("Crop Yield", key = "one"):
-                #st.session_state.selected_driver = "Crop Yield"
-        with c2:
-            with st.popover("Cost"):
-                st.markdown("some text here")
-            #st.button("Population", key = "two")
-        with c3:
-            #with st.popover("erm"):
-                #st.markdown("some text here")
-            #st.button("Forest Area", key = "three")
-        with c4:
-            with st.popover("Farming Practices/Equipment"):
-                st.markdown("some text here")
-        with c5:
-            with st.popover("Afforestation"):
-                st.markdown("some text here")
-            with st.popover("Deforestation"):
-                st.markdown("a description")
-            with st.popover("Land Availability"):
-                st.markdown("description")
-            with st.popover("Forest Fire"):
-                st.markdown("description")
-            with st.popover("Disease"):
-                st.markdown("description")
-        with c6:
-            #with st.popover("smth"):
-                #st.markdown("some text here")
-            
+            with c1:
+                #with st.popover("Crop Yield"):
+                    #st.markdown("some words here")
+                #if st.button("Crop Yield", key = "one"):
+                    #st.session_state.selected_driver = "Crop Yield"
+            with c2:
+                with st.popover("Cost"):
+                    st.markdown("some text here")
+                #st.button("Population", key = "two")
+            with c3:
+                #with st.popover("erm"):
+                    #st.markdown("some text here")
+                #st.button("Forest Area", key = "three")
+            with c4:
+                with st.popover("Farming Practices/Equipment"):
+                    st.markdown("some text here")
+            with c5:
+                with st.popover("Afforestation"):
+                    st.markdown("some text here")
+                with st.popover("Deforestation"):
+                    st.markdown("a description")
+                with st.popover("Land Availability"):
+                    st.markdown("description")
+                with st.popover("Forest Fire"):
+                    st.markdown("description")
+                with st.popover("Disease"):
+                    st.markdown("description")
+            with c6:
+                #with st.popover("smth"):
+                    #st.markdown("some text here")
+                
 
 with st.container(border=True):
     left, right = st.columns([2,6])
