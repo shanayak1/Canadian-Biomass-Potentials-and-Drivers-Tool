@@ -132,8 +132,9 @@ with t3:
                             
             **As a Driver of Biomass Potential and Bioconversion**
             
-            Higher crop yields directly increase the amount of biomass produced.
-                                  
+            Higher crop yields directly increase the amount of biomass produced.""")
+                st.divider()
+                st.markdown("""              
             **Explore further literature**
                             
             insert links here """)
