@@ -10,6 +10,9 @@ st.set_page_config(page_title = "Biomass Potentials and Availibility Drivers",
 st.header('Biomass Potential and Availibility Drivers')
 st.subheader('Key Drivers:')
 
+if "selected_driver" not in st.session_state:
+    st.session_state.selected_driver = None
+
 #create columns
 col1, col2, col3, col4, col5, col6 = st.columns(6)
 with col1:
@@ -35,7 +38,8 @@ with st.container(border=True):
     with right:
         c1, c2, c3 = st.columns(3)
         with c1:
-            st.button("Crop Yield", key = "one")
+            if st.button("Crop Yield", key = "one"):
+                st.session_state.selected_driver = "Crop Yield"
         with c2:
             st.button("Population", key = "two")
         with c3:
@@ -69,7 +73,17 @@ with st.container(border=True):
         with c3:
             st.button("Forest Area", key = "nine")
 
+st.write("")
+st.markdown("---")
+st.subheader("Driver Information")
 
+with st.container(border = True):
+    if st.session_state.selected_driver is None:
+        st.info("Click on a driver above to view its information.")
+    elif st.session_state.selected_driver == "Crop Yield":
+        st.subheader("Crop Yield")
+        st.caption("Type: Environmental")
+        st.write("Crop yield is influenced by ___")
 
 
 
