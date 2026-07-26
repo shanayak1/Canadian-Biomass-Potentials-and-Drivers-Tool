@@ -128,8 +128,7 @@ with t3:
                 <style>
                 div[data-testid="stPopover"] button {
                     background:#87AE73;
-                    color:#87AE73;
-                    border-radius:12px;
+                    color:black;
                     font-weight:bold;
                 }
                 </style>
