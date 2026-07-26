@@ -23,6 +23,7 @@ tabs = st.tabs([
 #create rows using a container
 with st.container(border=True):
     st.write("Forestry Biomass and Residues")
+    st.button("Crop Yield")
 with st.container(border=True):
     st.write("Agricultural Biomass and Residues")
 with st.container(border=True):
@@ -42,9 +43,6 @@ if "selected_driver" not in st.session_state:
     st.session_state.selected_driver = None
 
 #create popup display
-if st.session_state.selected_driver == "Crop Yield":
-    with st.container(border = True):
-        st.subheader("Crop Yield")
-        st.caption ("Environmental")
-        st.write("Crop yield is ______")
+with st.popover("Crop Y"):
+    st.write("WORDS HERE")
 
