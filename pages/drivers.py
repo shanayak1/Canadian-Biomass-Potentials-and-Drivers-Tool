@@ -133,7 +133,7 @@ with t3:
             
             Higher crop yields directly increase the amount of biomass produced.
                             
-            ** Explore further literature**
+            **Explore further literature**
                             
             insert links here """)
                 #st.markdown("some text here")
