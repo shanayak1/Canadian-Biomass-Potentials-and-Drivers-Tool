@@ -21,9 +21,10 @@ empty_space, pestel_tabs = st.columns([2,6])
 with empty_space:
     st.write("")
 
-t1, t2, t3, t4, t5, t6 = st.tabs(["Political", "Economic", "Social", "Technological", "Environmental", "Legal"])
+with pestel_tabs:
+    t1, t2, t3, t4, t5, t6 = st.tabs(["Political", "Economic", "Social", "Technological", "Environmental", "Legal"])
 
-with t6:
+    with t6:
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -44,7 +45,7 @@ with t6:
         with right:
             c1 = st.columns(1)
            
-with t5:
+    with t5:
     with st.container(border=True):
         left, right = st.columns([2,6])
     with left:
@@ -93,7 +94,7 @@ with t5:
             st.markdown("Livestock Residues")
         with right:
             c1, c2, c3, c4, c5, c6 = st.columns(6)
-with t4:
+    with t4:
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -118,7 +119,7 @@ with t4:
             st.markdown("Livestock Residue")
         with right:
             c1 = st.columns(1)
-with t3:
+    with t3:
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -140,7 +141,7 @@ with t3:
             with c1:
                 with st.popover("Livestock Population"):
                     st.markdown("some text here")
-with t2:
+    with t2:
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -168,7 +169,7 @@ with t2:
             with c1:
                 with st.popover("Cost"):
                     st.markdown("some text here")
-with t1:
+    with t1:
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
