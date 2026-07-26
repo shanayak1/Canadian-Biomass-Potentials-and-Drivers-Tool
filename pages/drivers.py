@@ -41,7 +41,9 @@ with st.container(border=True):
             if st.button("Crop Yield", key = "one"):
                 st.session_state.selected_driver = "Crop Yield"
         with c2:
-            st.button("Population", key = "two")
+            with st.popover("Population"):
+                st.markdown("some text here")
+            #st.button("Population", key = "two")
         with c3:
             st.button("Forest Area", key = "three")
 
@@ -84,6 +86,4 @@ with st.container(border = True):
         st.caption("Type: Environmental")
         st.write("Crop yield is influenced by ___")
 
-with st.popover("Crop Yield"):
-    st.markdown("some text here")
 
