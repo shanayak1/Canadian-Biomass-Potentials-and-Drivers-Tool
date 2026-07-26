@@ -316,22 +316,16 @@ with t1:
         #         st.write()
 
 
-selected = st.segmented_control(
-    "",
-    ["Political", "Economic", "Social", "Tech", "Eco", "Legal"]
-)
 
+# st.markdown("---")
+# st.subheader("Driver Information")
 
-
-st.markdown("---")
-st.subheader("Driver Information")
-
-with st.container(border = True):
-    if st.session_state.selected_driver is None:
-        st.info("Click on a driver above to view its information.")
-    elif st.session_state.selected_driver == "Crop Yield":
-        st.subheader("Crop Yield")
-        st.caption("Type: Environmental")
-        st.write("Crop yield is influenced by ___")
+# with st.container(border = True):
+#     if st.session_state.selected_driver is None:
+#         st.info("Click on a driver above to view its information.")
+#     elif st.session_state.selected_driver == "Crop Yield":
+#         st.subheader("Crop Yield")
+#         st.caption("Type: Environmental")
+#         st.write("Crop yield is influenced by ___")
 
 
