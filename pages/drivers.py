@@ -127,11 +127,11 @@ with t3:
                 st.subheader("Livestock Population")
                 st.caption("Type: Social")
                 st.markdown("""
-            Crop yield is ___ and __ and influenced by _______.
-            /n**As a Driver of Biomass Potential and Bioconversion**
-            /nHigher crop yields directly increase the amount of biomass produced.
-            /n** Explore further literature**
-            /ninsert links here """)
+            Crop yield is ___ and __ and influenced by _______.""" and """/n**As a Driver of Biomass Potential and Bioconversion**""")
+            # **As a Driver of Biomass Potential and Bioconversion**
+            # /nHigher crop yields directly increase the amount of biomass produced.
+            # /n** Explore further literature**
+            # /ninsert links here """)
                 #st.markdown("some text here")
 with t2:
     with st.container(border=True):
