@@ -127,7 +127,7 @@ with t3:
                 st.markdown("""
                 <style>
                 div[data-testid="stPopover"] button {
-                    background:#3E7D20;
+                    background:#87AE73;
                     color:white;
                     border-radius:12px;
                     font-weight:bold;
@@ -136,6 +136,7 @@ with t3:
                 """, unsafe_allow_html=True)
                 st.subheader("Livestock Population")
                 st.caption("Type: Social")
+                st.divider()
                 st.markdown("""
             Crop yield is ___ and __ and influenced by _______.
                             
