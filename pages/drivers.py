@@ -127,7 +127,7 @@ with t3:
                 st.markdown("""
                 <style>
                 div[data-testid="stPopover"] button {
-                    background:#87AE73;
+                    background:"#87AE73";
                     color:black;
                     font-weight:bold;
                 }
