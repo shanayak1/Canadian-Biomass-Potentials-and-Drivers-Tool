@@ -48,14 +48,17 @@ with st.container(border=True):
                 #st.markdown("some words here")
             #if st.button("Crop Yield", key = "one"):
                 #st.session_state.selected_driver = "Crop Yield"
+                st.write()
         with c2:
             with st.popover("Cost"):
                 st.markdown("some text here")
             #st.button("Population", key = "two")
+            st.write()
         with c3:
             #with st.popover("erm"):
                 #st.markdown("some text here")
             #st.button("Forest Area", key = "three")
+            st.write()
         with c4:
             with st.popover("Farming Practices/Equipment"):
                 st.markdown("some text here")
