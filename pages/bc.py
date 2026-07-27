@@ -279,7 +279,7 @@ with filters:
         default = subcategories
     )
     
-    st.subheader("Sustainable Removal Factors (%):")
+    st.text("**Sustainable Removal Factors (%):**")
 
     
     if "Forestry Residue" in selected_categories:
