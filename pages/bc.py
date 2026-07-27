@@ -187,17 +187,17 @@ st.sidebar.header("Filters")
 #     "Biosolids" : 0.9,
 # }
 
-# #filter all the rows to only have selected categories/subcategories
-# filtered_df = df[
-#     (df["Category"].isin(selected_categories))
-#     &
-#     (df["SubCategory"].isin(selected_subcategories))
-# ].copy()
+#filter all the rows to only have selected categories/subcategories
+filtered_df = df[
+    (df["Category"].isin(selected_categories))
+    &
+    (df["SubCategory"].isin(selected_subcategories))
+].copy()
 
-# #filter them to the selected sustainable removal factor
-# filtered_df["Sustainable Removal Factor"] = (
-#     filtered_df["Category"].map(sf_dict)
-# )
+#filter them to the selected sustainable removal factor
+filtered_df["Sustainable Removal Factor"] = (
+    filtered_df["Category"].map(sf_dict)
+)
 
 # #sub in the new livestock sus factor
 # livestock_rows = filtered_df["Category"] == "Livestock Residue"
@@ -245,6 +245,65 @@ fig = px.bar(
 st.subheader('Future Biomass Availability Prediction')
 
 #ITERATION PRACTICE SECTION TESTER
+
+livestock_sf_dict = {
+    "Sheep and Lambs" : 0.3,
+    "Calves (under 1 year)" : 0.82,
+    "Dairy cows" : 0.82,
+    "Steers (1 year and over)": 0.82,
+    "Bulls" : 0.5,
+    "Beef heifers" : 0.5,
+    "Dairy heifers" : 0.8,
+    "Boars" : 1,
+    "Slaughter heifers" : 0.6,
+    "Sows and gilts" : 1,
+    "Pigs" : 1,
+    "Beef cows" : 0.5,
+}
+
+urban_waste_dict = {
+    "Sewage" : 0.9,
+    "Biosolids" : 0.9,
+}
+
+    #filter all the rows to only have selected categories/subcategories
+filtered_df = df[
+        (df["Category"].isin(selected_categories))
+        &
+        (df["SubCategory"].isin(selected_subcategories))
+    ].copy()
+
+    #filter them to the selected sustainable removal factor
+filtered_df["Sustainable Removal Factor"] = (
+        filtered_df["Category"].map(sf_dict)
+    )
+
+    #sub in the new livestock sus factor
+livestock_rows = filtered_df["Category"] == "Livestock Residue"
+
+    #sub in livestock factor into dataframe
+filtered_df.loc[livestock_rows, "Sustainable Removal Factor"] = (
+        filtered_df.loc[livestock_rows, "SubCategory"].map(livestock_sf_dict)
+    )
+
+    #sub in new urban waste sus factor
+urban_rows = filtered_df["Category"] == "Urban Waste"
+filtered_df.loc[urban_rows, "Sustainable Removal Factor"] = (
+        filtered_df.loc[urban_rows, "SubCategory"].map(urban_waste_dict)
+    )
+
+    #sub in new crop sus factors
+crop_rows = filtered_df["Category"] == "Crop Residue"
+filtered_df.loc[crop_rows, "Sustainable Removal Factor"] = (
+        filtered_df.loc[crop_rows, "SubCategory"].map(crops_dict)
+    )
+
+    #calculate all sustainable potentials
+filtered_df["Sustainable Potential"] = (
+        filtered_df["Production Volume"]
+        * filtered_df["Sustainable Removal Factor"]
+    )
+
 main, filters = st.columns([4,1])
 with main:
     st.title("Production Volume")
@@ -396,61 +455,3 @@ with filters:
                 step = 1.0,
             )
             crops_dict["Mustard Seed"] = mustard_sf
-
-    livestock_sf_dict = {
-        "Sheep and Lambs" : 0.3,
-        "Calves (under 1 year)" : 0.82,
-        "Dairy cows" : 0.82,
-        "Steers (1 year and over)": 0.82,
-        "Bulls" : 0.5,
-        "Beef heifers" : 0.5,
-        "Dairy heifers" : 0.8,
-        "Boars" : 1,
-        "Slaughter heifers" : 0.6,
-        "Sows and gilts" : 1,
-        "Pigs" : 1,
-        "Beef cows" : 0.5,
-    }
-
-    urban_waste_dict = {
-        "Sewage" : 0.9,
-        "Biosolids" : 0.9,
-    }
-
-    #filter all the rows to only have selected categories/subcategories
-    filtered_df = df[
-        (df["Category"].isin(selected_categories))
-        &
-        (df["SubCategory"].isin(selected_subcategories))
-    ].copy()
-
-    #filter them to the selected sustainable removal factor
-    filtered_df["Sustainable Removal Factor"] = (
-        filtered_df["Category"].map(sf_dict)
-    )
-
-    #sub in the new livestock sus factor
-    livestock_rows = filtered_df["Category"] == "Livestock Residue"
-
-    #sub in livestock factor into dataframe
-    filtered_df.loc[livestock_rows, "Sustainable Removal Factor"] = (
-        filtered_df.loc[livestock_rows, "SubCategory"].map(livestock_sf_dict)
-    )
-
-    #sub in new urban waste sus factor
-    urban_rows = filtered_df["Category"] == "Urban Waste"
-    filtered_df.loc[urban_rows, "Sustainable Removal Factor"] = (
-        filtered_df.loc[urban_rows, "SubCategory"].map(urban_waste_dict)
-    )
-
-    #sub in new crop sus factors
-    crop_rows = filtered_df["Category"] == "Crop Residue"
-    filtered_df.loc[crop_rows, "Sustainable Removal Factor"] = (
-        filtered_df.loc[crop_rows, "SubCategory"].map(crops_dict)
-    )
-
-    #calculate all sustainable potentials
-    filtered_df["Sustainable Potential"] = (
-        filtered_df["Production Volume"]
-        * filtered_df["Sustainable Removal Factor"]
-    )
