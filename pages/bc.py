@@ -29,9 +29,9 @@ categories = df["Category"].unique()
 #     default = categories
 # )
 
-subcategories = df[
-    df["Category"].isin(selected_categories)
-]["SubCategory"].unique()
+# subcategories = df[
+#     df["Category"].isin(selected_categories)
+# ]["SubCategory"].unique()
 
 # selected_subcategories = st.sidebar.multiselect(
 #     "Select SubCategory",
@@ -271,6 +271,11 @@ with filters:
         categories,
         default = categories
     )
+
+    subcategories = df[
+        df["Category"].isin(selected_categories)
+    ]["SubCategory"].unique()
+
     selected_subcategories = st.multiselect(
         "Select SubCategory",
         subcategories,
