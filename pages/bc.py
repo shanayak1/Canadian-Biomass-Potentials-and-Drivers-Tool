@@ -19,7 +19,7 @@ df = pd.read_excel(excel_file,
                    usecols = 'B:D',
                    header = 2)
 
-st.sidebar.header("FILTERS")
+st.sidebar.header("Filters")
 
 categories = df["Category"].unique()
 
