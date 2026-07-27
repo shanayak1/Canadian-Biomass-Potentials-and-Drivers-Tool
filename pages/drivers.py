@@ -11,10 +11,6 @@ st.set_page_config(page_title = "Biomass Potentials and Availibility Drivers",
 st.header('Biomass Potential and Availibility Drivers')
 st.subheader('Key Drivers:')
 
-#set session state
-if "selected_driver" not in st.session_state:
-    st.session_state.selected_driver = None
-
 #create pestel tabs
 t1, t2, t3, t4, t5, t6 = st.tabs(["Political", "Economic", "Social", "Technological", "Environmental", "Legal"])
 
