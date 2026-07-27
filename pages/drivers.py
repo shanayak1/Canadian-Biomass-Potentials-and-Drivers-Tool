@@ -12,110 +12,112 @@ st.header('Biomass Potential and Availibility Drivers')
 st.subheader('Key Drivers:')
 
 #create pestel tabs
-t1, t2, t3, t4, t5, t6 = st.tabs(["Political", "Economic", "Social", "Technological", "Environmental", "Legal"])
+political, economic, social, tech, environmental, legal = st.tabs(["Political", "Economic", "Social", "Technological", "Environmental", "Legal"])
 
-with t6:
+with legal:
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
             st.markdown("Forestry Biomass and Residues")
+
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
             st.markdown("Agricultural Biomass and Residues")
-                
+
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
             st.markdown("Livestock Residue")
            
-with t5:
+with environmental:
     with st.container(border=True):
         left, right = st.columns([2,6])
-    with left:
-        st.markdown("Forestry Biomass and Residues")
-    with right:
-        c1, c2, c3, c4, c5 = st.columns(5)
-        with c1:
-            with st.popover("Afforestation"):
-                st.subheader("Sustainable Removal Practices")
-                st.caption("Type: Technologica")
-                st.divider()
-                st.markdown("""
-             is ___ and __ and influenced by _______.           
-                            
-            **As a Driver of Biomass Potential and Bioconversion:**
-            
-            Higher crop yields directly increase the amount of biomass produced.""")
-                st.divider()
-                st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
-        with c2:
-            with st.popover("Deforestation"):
-                st.subheader("Sustainable Removal Practices")
-                st.caption("Type: Technologica")
-                st.divider()
-                st.markdown("""
-             is ___ and __ and influenced by _______.           
-                            
-            **As a Driver of Biomass Potential and Bioconversion:**
-            
-            Higher crop yields directly increase the amount of biomass produced.""")
-                st.divider()
-                st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
-        with c3:
-            with st.popover("Land Availability"):
-                st.subheader("Sustainable Removal Practices")
-                st.caption("Type: Technologica")
-                st.divider()
-                st.markdown("""
-             is ___ and __ and influenced by _______.           
-                            
-            **As a Driver of Biomass Potential and Bioconversion:**
-            
-            Higher crop yields directly increase the amount of biomass produced.""")
-                st.divider()
-                st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
-        with c4:
-            with st.popover("Forest Fire"):
-                st.subheader("Sustainable Removal Practices")
-                st.caption("Type: Technologica")
-                st.divider()
-                st.markdown("""
-             is ___ and __ and influenced by _______.           
-                            
-            **As a Driver of Biomass Potential and Bioconversion:**
-            
-            Higher crop yields directly increase the amount of biomass produced.""")
-                st.divider()
-                st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
-        with c5:
-            with st.popover("Disease"):
-                st.subheader("Sustainable Removal Practices")
-                st.caption("Type: Technologica")
-                st.divider()
-                st.markdown("""
-             is ___ and __ and influenced by _______.           
-                            
-            **As a Driver of Biomass Potential and Bioconversion:**
-            
-            Higher crop yields directly increase the amount of biomass produced.""")
-                st.divider()
-                st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
+        with left:
+            st.markdown("Forestry Biomass and Residues")
+        with right:
+            c1, c2, c3, c4, c5 = st.columns(5)
+            with c1:
+                with st.popover("Afforestation"):
+                    st.subheader("Afforestation")
+                    st.caption("Type: Environmental")
+                    st.divider()
+                    st.markdown("""
+                is ___ and __ and influenced by _______.           
+                                
+                **As a Driver of Biomass Potential and Bioconversion:**
+                
+                _______ directly increase the amount of biomass produced.""")
+                    st.divider()
+                    st.markdown("""              
+                **Explore further literature**
+                                
+                insert links here """)
+            with c2:
+                with st.popover("Deforestation"):
+                    st.subheader("Deforestation")
+                    st.caption("Type: Environmental")
+                    st.divider()
+                    st.markdown("""
+                is ___ and __ and influenced by _______.           
+                                
+                **As a Driver of Biomass Potential and Bioconversion:**
+                
+                _____ directly increase the amount of biomass produced.""")
+                    st.divider()
+                    st.markdown("""              
+                **Explore further literature**
+                                
+                insert links here """)
+            with c3:
+                with st.popover("Land Availability"):
+                    st.subheader("Land Availability")
+                    st.caption("Type: Environmental")
+                    st.divider()
+                    st.markdown("""
+                is ___ and __ and influenced by _______.           
+                                
+                **As a Driver of Biomass Potential and Bioconversion:**
+                
+                _____ directly increase the amount of biomass produced.""")
+                    st.divider()
+                    st.markdown("""              
+                **Explore further literature**
+                                
+                insert links here """)
+            with c4:
+                with st.popover("Forest Fire"):
+                    st.subheader("Forest Fire")
+                    st.caption("Type: Environmental")
+                    st.divider()
+                    st.markdown("""
+                is ___ and __ and influenced by _______.           
+                                
+                **As a Driver of Biomass Potential and Bioconversion:**
+                
+                Higher crop yields directly increase the amount of biomass produced.""")
+                    st.divider()
+                    st.markdown("""              
+                **Explore further literature**
+                                
+                insert links here """)
+            with c5:
+                with st.popover("Disease"):
+                    st.subheader("Disease")
+                    st.caption("Type: Environmental")
+                    st.divider()
+                    st.markdown("""
+                is ___ and __ and influenced by _______.           
+                                
+                **As a Driver of Biomass Potential and Bioconversion:**
+                
+                Higher crop yields directly increase the amount of biomass produced.""")
+                    st.divider()
+                    st.markdown("""              
+                **Explore further literature**
+                                
+                insert links here """)
+                    
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -124,8 +126,8 @@ with t5:
             c1, c2, c3, c4, c5 = st.columns(5)
             with c1:
                 with st.popover("Crop Yield"):
-                    st.subheader("Sustainable Removal Practices")
-                    st.caption("Type: Technologica")
+                    st.subheader("Crop Yield")
+                    st.caption("Type: Environmental")
                     st.divider()
                     st.markdown("""
              is ___ and __ and influenced by _______.           
@@ -140,8 +142,8 @@ with t5:
             insert links here """)
             with c2:
                 with st.popover("Cropland"):
-                    st.subheader("Sustainable Removal Practices")
-                    st.caption("Type: Technologica")
+                    st.subheader("Cropland")
+                    st.caption("Type: Environmental")
                     st.divider()
                     st.markdown("""
              is ___ and __ and influenced by _______.           
@@ -156,8 +158,8 @@ with t5:
             insert links here """)
             with c3:
                 with st.popover("Land Availability"):
-                    st.subheader("Sustainable Removal Practices")
-                    st.caption("Type: Technologica")
+                    st.subheader("Land Availability")
+                    st.caption("Type: Environmental")
                     st.divider()
                     st.markdown("""
              is ___ and __ and influenced by _______.           
@@ -172,8 +174,8 @@ with t5:
             insert links here """)
             with c4:
                 with st.popover("Extreme Weather"):
-                    st.subheader("Sustainable Removal Practices")
-                    st.caption("Type: Technologica")
+                    st.subheader("Extreme Weather")
+                    st.caption("Type: Environmental")
                     st.divider()
                     st.markdown("""
              is ___ and __ and influenced by _______.           
@@ -188,8 +190,8 @@ with t5:
             insert links here """)
             with c5:
                 with st.popover("Climate Change"):
-                    st.subheader("Sustainable Removal Practices")
-                st.caption("Type: Technologica")
+                    st.subheader("Climate Change")
+                st.caption("Type: Environmental")
                 st.divider()
                 st.markdown("""
              is ___ and __ and influenced by _______.           
@@ -207,7 +209,7 @@ with t5:
         with left:
             st.markdown("Livestock Residues")
             
-with t4:
+with tech:
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -237,7 +239,7 @@ with t4:
         with right:
             with st.popover("Sustainable Removal Practices"):
                 st.subheader("Sustainable Removal Practices")
-                st.caption("Type: Technologica")
+                st.caption("Type: Technological")
                 st.divider()
                 st.markdown("""
              is ___ and __ and influenced by _______.           
@@ -254,9 +256,8 @@ with t4:
         left, right = st.columns([2,6])
         with left:
             st.markdown("Livestock Residue")
-            # with right:
-            #     c1 = st.columns(1)
-with t3:
+
+with social:
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -275,7 +276,7 @@ with t3:
                 st.caption("Type: Social")
                 st.divider()
                 st.markdown("""
-            Crop yield is ___ and __ and influenced by _______.           
+            Livestock population is ___ and __ and influenced by _______.           
                             
             **As a Driver of Biomass Potential and Bioconversion:**
             
@@ -285,36 +286,70 @@ with t3:
             **Explore further literature**
                             
             insert links here """)
-                #st.markdown("some text here")
-with t2:
+
+with economic:
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
             st.markdown("Forestry Biomass and Residues")
         with right:
-                # c1 = st.columns(1)
-                # with c1:
             with st.popover("Cost"):
-                st.markdown("some text here")
+                st.subheader("Cost")
+                st.caption("Type: Economic")
+                st.divider()
+                st.markdown("""
+            Cost is ___ and __ and influenced by _______.           
+                            
+            **As a Driver of Biomass Potential and Bioconversion:**
+            
+            Higher costs ____ the amount of biomass produced.""")
+                st.divider()
+                st.markdown("""              
+            **Explore further literature**
+                            
+            insert links here """)
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
             st.markdown("Agricultural Biomass and Residues")
         with right:
-                # c1 = st.columns(1)
-                # with c1:
             with st.popover("Cost"):
-                st.markdown("some text here")
+                st.subheader("Cost")
+                st.caption("Type: Economic")
+                st.divider()
+                st.markdown("""
+            Cost is ___ and __ and influenced by _______.           
+                            
+            **As a Driver of Biomass Potential and Bioconversion:**
+            
+            Higher costs ____ the amount of biomass produced.""")
+                st.divider()
+                st.markdown("""              
+            **Explore further literature**
+                            
+            insert links here """)
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
             st.markdown("Livestock Residue")
         with right:
-                # c1 = st.columns(1)
-                # with c1:
             with st.popover("Cost"):
-                st.markdown("some text here")
-with t1:
+                st.subheader("Cost")
+                st.caption("Type: Economic")
+                st.divider()
+                st.markdown("""
+            Cost is ___ and __ and influenced by _______.           
+                            
+            **As a Driver of Biomass Potential and Bioconversion:**
+            
+            Higher costs ____ the amount of biomass produced.""")
+                st.divider()
+                st.markdown("""              
+            **Explore further literature**
+                            
+            insert links here """)
+                
+with political:
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
