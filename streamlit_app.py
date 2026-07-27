@@ -34,8 +34,7 @@ pg = st.navigation(pages=[home_page, alberta_page])
 pg = st.navigation(
     {
         "Introductions": [home_page],
-        "Alberta": [alberta_page],
-        "British Columbia": [bc_page],
+        "Biomass Potentials": [alberta_page, bc_page],
         "Biomass Drivers": [drivers_page],
     }
 )
