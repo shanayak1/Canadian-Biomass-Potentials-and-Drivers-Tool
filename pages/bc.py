@@ -261,9 +261,6 @@ st.subheader('Future Biomass Availability Prediction')
 #ITERATION PRACTICE SECTION TESTER
 
 main, filters = st.columns([4,1])
-with main:
-    st.title("Production Volume")
-    st.plotly_chart(fig, use_container_width = True)
 with filters:
     st.subheader("Filters")
     selected_categories = st.multiselect(
@@ -460,3 +457,7 @@ with filters:
         },
         title = "Production Volume by Biomass Subtype",
     )
+
+with main:
+    st.title("Production Volume")
+    st.plotly_chart(fig, use_container_width = True)
