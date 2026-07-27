@@ -6,6 +6,6 @@ st.subheader("A Brief Introduction and Methodology")
 
 st.text("This tool has been created to build a better understanding of current biomass resources available in parts of Canada, as well as how these resource quantities will change in the future. The following drivers were identified as factors that affect biomass resource availability in the future")
 
-st.subheader("Biomass Availability Drivers")
+
 
 
