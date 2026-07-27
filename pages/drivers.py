@@ -29,6 +29,7 @@ with legal:
         left, right = st.columns([2,6])
         with left:
             st.markdown("Livestock Residue")
+
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -390,18 +391,82 @@ with political:
         left, right = st.columns([2,6])
         with left:
             st.markdown("Forestry Biomass and Residues")
+        with right:
+            with st.popover("Canadian Policy"):
+                st.subheader("Canadian Policy")
+                st.caption("Type: Political")
+                st.divider()
+                st.markdown("""
+            Canadian Policy involves the various regulations and laws put into place by the Canadian Government in regards to environmental issues, climate change and sustainability regulations. Policies such as the Net Zero Emissions goal can impact the funding and resources allocated towards biomass resources.           
+                                    
+            **As a Driver of Biomass Potential and Bioconversion:**
+                    
+            An increase in governmental policies supporting the use of biomass and renewable energy sources allows for an increase in funding towards the collection and useage of biomass as an energy resource, increasing the amount produced and collected.""")
+                st.divider()
+                st.markdown("""              
+            **Explore further literature**
+                                    
+            insert links here """)
                 
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
             st.markdown("Agricultural Biomass and Residues")
+        with right:
+            with st.popover("Canadian Policy"):
+                st.subheader("Canadian Policy")
+                st.caption("Type: Political")
+                st.divider()
+                st.markdown("""
+            Canadian Policy involves the various regulations and laws put into place by the Canadian Government in regards to environmental issues, climate change and sustainability regulations. Policies such as the Net Zero Emissions goal can impact the funding and resources allocated towards biomass resources.           
+                                            
+            **As a Driver of Biomass Potential and Bioconversion:**
+                            
+            An increase in governmental policies supporting the use of biomass and renewable energy sources allows for an increase in funding towards the collection and useage of biomass as an energy resource, increasing the amount produced and collected.""")
+                st.divider()
+                st.markdown("""              
+            **Explore further literature**
+                                            
+            insert links here """)
             
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
             st.markdown("Livestock Residue")
+        with right:
+            with st.popover("Canadian Policy"):
+                st.subheader("Canadian Policy")
+                st.caption("Type: Political")
+                st.divider()
+                st.markdown("""
+            Canadian Policy involves the various regulations and laws put into place by the Canadian Government in regards to environmental issues, climate change and sustainability regulations. Policies such as the Net Zero Emissions goal can impact the funding and resources allocated towards biomass resources.           
+                                            
+            **As a Driver of Biomass Potential and Bioconversion:**
+                            
+            An increase in governmental policies supporting the use of biomass and renewable energy sources allows for an increase in funding towards the collection and useage of biomass as an energy resource, increasing the amount produced and collected.""")
+                st.divider()
+                st.markdown("""              
+            **Explore further literature**
+                                            
+            insert links here """)
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
             st.markdown("Urban Waste")
+        with right:
+            with st.popover("Canadian Policy"):
+                st.subheader("Canadian Policy")
+                st.caption("Type: Political")
+                st.divider()
+                st.markdown("""
+            Canadian Policy involves the various regulations and laws put into place by the Canadian Government in regards to environmental issues, climate change and sustainability regulations. Policies such as the Net Zero Emissions goal can impact the funding and resources allocated towards biomass resources.           
+                                            
+            **As a Driver of Biomass Potential and Bioconversion:**
+                            
+            An increase in governmental policies supporting the use of biomass and renewable energy sources allows for an increase in funding towards the collection and useage of biomass as an energy resource, increasing the amount produced and collected.""")
+                st.divider()
+                st.markdown("""              
+            **Explore further literature**
+                                            
+            insert links here """)
 
