@@ -167,8 +167,8 @@ with environmental:
             **As a Driver of Biomass Potential and Bioconversion:**
             
             Higher crop yields directly increase the amount of biomass produced.""")
-                st.divider()
-                st.markdown("""              
+                    st.divider()
+                    st.markdown("""              
             **Explore further literature**
                             
             insert links here """)
@@ -191,16 +191,16 @@ with environmental:
             with c5:
                 with st.popover("Climate Change"):
                     st.subheader("Climate Change")
-                st.caption("Type: Environmental")
-                st.divider()
-                st.markdown("""
+                    st.caption("Type: Environmental")
+                    st.divider()
+                    st.markdown("""
              is ___ and __ and influenced by _______.           
                             
             **As a Driver of Biomass Potential and Bioconversion:**
             
             Higher crop yields directly increase the amount of biomass produced.""")
-                st.divider()
-                st.markdown("""              
+                    st.divider()
+                    st.markdown("""              
             **Explore further literature**
                             
             insert links here """)
