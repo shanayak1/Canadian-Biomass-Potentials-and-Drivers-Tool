@@ -8,8 +8,4 @@ st.text("This tool has been created to build a better understanding of current b
 
 st.subheader("Biomass Availability Drivers")
 
-left_column, right_column = st.columns(2)
 
-left_column.text("Forestry")
-
-right_column.write("Livestock Residue")
