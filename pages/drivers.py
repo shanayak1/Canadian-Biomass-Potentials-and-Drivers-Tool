@@ -29,6 +29,10 @@ with legal:
         left, right = st.columns([2,6])
         with left:
             st.markdown("Livestock Residue")
+    with st.container(border=True):
+        left, right = st.columns([2,6])
+        with left:
+            st.markdown("Urban Waste")
            
 with environmental:
     with st.container(border=True):
@@ -208,8 +212,16 @@ with environmental:
         left, right = st.columns([2,6])
         with left:
             st.markdown("Livestock Residues")
+    with st.container(border=True):
+        left, right = st.columns([2,6])
+        with left:
+            st.markdown("Urban Waste")
             
 with tech:
+    with st.container(border=True):
+        left, right = st.columns([2,6])
+        with left:
+            st.markdown("Urban Waste")
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -261,6 +273,26 @@ with social:
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
+            st.markdown("Urban Waste")
+        with right:
+            with st.popover("City/Town Population"):
+                st.subheader("City/Town Population")
+                st.caption("Type: Social")
+                st.divider()
+                st.markdown("""
+            Livestock population is ___ and __ and influenced by _______.           
+                                        
+            **As a Driver of Biomass Potential and Bioconversion:**
+                        
+            Higher crop yields directly increase the amount of biomass produced.""")
+            st.divider()
+            st.markdown("""              
+            **Explore further literature**
+                                        
+            insert links here """)
+    with st.container(border=True):
+        left, right = st.columns([2,6])
+        with left:
             st.markdown("Forestry Biomass and Residues")
     with st.container(border=True):
         left, right = st.columns([2,6])
@@ -288,6 +320,10 @@ with social:
             insert links here """)
 
 with economic:
+    with st.container(border=True):
+        left, right = st.columns([2,6])
+        with left:
+            st.markdown("Urban Waste")
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -350,6 +386,10 @@ with economic:
             insert links here """)
                 
 with political:
+    with st.container(border=True):
+        left, right = st.columns([2,6])
+        with left:
+            st.markdown("Urban Waste")
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
