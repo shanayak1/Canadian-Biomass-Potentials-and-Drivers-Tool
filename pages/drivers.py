@@ -458,8 +458,7 @@ with political:
                 st.subheader("Canadian Policy")
                 st.caption("Type: Political")
                 st.divider()
-                st.markdown("""
-            Canadian Policy involves the various regulations and laws put into place by the Canadian Government in regards to environmental issues, climate change and sustainability regulations. Policies such as the Net Zero Emissions goal can impact the funding and resources allocated towards biomass resources.           
+                st.markdown("""Canadian Policy involves the various regulations and laws put into place by the Canadian Government in regards to environmental issues, climate change and sustainability regulations. Policies such as the Net Zero Emissions goal can impact the funding and resources allocated towards biomass resources.           
                                             
             **As a Driver of Biomass Potential and Bioconversion:**
                             
