@@ -48,11 +48,11 @@ with environmental:
                     st.caption("Type: Environmental")
                     st.divider()
                     st.markdown("""
-                is ___ and __ and influenced by _______.           
+                Forestry biomass and residues are greatly impacted by land availability. Afforestation increases the area of available forests, countering the effects of deforestation. As the current afforestation rate is significantly less than the previously low deforestation rate in Canada, this driver does not have a large contribution to the land availability.        
                                 
                 **As a Driver of Biomass Potential and Bioconversion:**
                 
-                _______ directly increase the amount of biomass produced.""")
+                Afforestation directly impacts the amount of available land for forestry use, therefore, an increase in Afforestation will cause a slight increase in forestry biomass.""")
                     st.divider()
                     st.markdown("""              
                 **Explore further literature**
