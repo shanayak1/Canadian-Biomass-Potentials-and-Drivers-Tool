@@ -184,7 +184,7 @@ livestock_sf_dict = {
 }
 
 urban_waste_dict = {
-    "Sewage" : 0.9,
+    "Sewege" : 0.9,
     "Biosolids" : 0.9,
 }
 
