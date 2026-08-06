@@ -339,7 +339,7 @@ for i in range(0, len(category_order), 2):
                 )
                 st.plotly_chart(fig, use_container_width = True)
 
-
+st.subheader("Tabular Data:")
 st.dataframe(
     category_energy_df[
         ["Category",
