@@ -221,7 +221,7 @@ filtered_df.loc[crop_rows, "Sustainable Removal Factor"] = (
 )
 
 #calculate all sustainable potentials
-filtered_df["Sustainable Potential (Dry Matter Tonnes)"] = (
+filtered_df["Sustainable Potential (DMT)"] = (
     filtered_df["Production Volume"]
     * filtered_df["Sustainable Removal Factor"]
 )
@@ -231,7 +231,7 @@ category_energy_df = (
     filtered_df
     .groupby("Category", as_index=False)
     .agg({
-        "Sustainable Potential (Dry Matter Tonnes)":"sum"
+        "Sustainable Potential (DMT)":"sum"
     })
 )
 
@@ -249,7 +249,7 @@ category_energy_df["LHV"] = (
 )
 #calculate energy
 category_energy_df["Energy Potential (PJ)"] = (
-    category_energy_df["Sustainable Potential (Dry Matter Tonnes)"]
+    category_energy_df["Sustainable Potential (DMT)"]
     * category_energy_df["LHV"]
 )
 
@@ -305,7 +305,7 @@ for i in range(0, len(category_order), 2):
             fig = px.bar(
                 category_df,
                 x = "SubCategory",
-                y = "Sustainable Potential (Dry Matter Tonnes)",
+                y = "Sustainable Potential (DMT)",
                 color = "Category",
                 color_discrete_map = color_map,
                 title = category
@@ -327,7 +327,7 @@ for i in range(0, len(category_order), 2):
                 fig = px.bar(
                     category_df,
                     x = "SubCategory",
-                    y = "Sustainable Potential (Dry Matter Tonnes)",
+                    y = "Sustainable Potential (DMT)",
                     color = "Category",
                     color_discrete_map = color_map,
                     title = category
@@ -344,7 +344,7 @@ for i in range(0, len(category_order), 2):
 st.dataframe(
     category_energy_df[
         ["Category",
-         "Sustainable Potential (Dry Matter Tonnes)",
+         "Sustainable Potential (DMT)",
          "Energy Potential (PJ)"]
     ]
 )
