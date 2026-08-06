@@ -225,24 +225,6 @@ filtered_df["Sustainable Potential"] = (
     * filtered_df["Sustainable Removal Factor"]
 )
 
-fig = px.bar(
-    filtered_df,
-    x = "SubCategory",
-    y = "Sustainable Potential", 
-    color = "Category",
-    color_discrete_map = {
-        "Forestry" : "#4D8C57",
-        "Livestock Residue" : "#78A161",
-        "Purpose Grown Energy Crops" : "#A3B56B",
-        "Urban Waste" : "#895129",
-        "Crop Residue" : "#F8DE7E",
-    },
-    title = "Production Volume by Biomass Subtype",
-)
-    
-st.plotly_chart(fig, use_container_width = True)
-
-st.subheader('Future Biomass Availability Prediction')
 
 category_energy_df = (
     filtered_df
@@ -284,3 +266,21 @@ st.plotly_chart(
     use_container_width = True
 )
 
+
+
+fig = px.bar(
+    filtered_df,
+    x = "SubCategory",
+    y = "Sustainable Potential", 
+    color = "Category",
+    color_discrete_map = {
+        "Forestry" : "#4D8C57",
+        "Livestock Residue" : "#78A161",
+        "Purpose Grown Energy Crops" : "#A3B56B",
+        "Urban Waste" : "#895129",
+        "Crop Residue" : "#F8DE7E",
+    },
+    title = "Production Volume by Biomass Subtype",
+)
+    
+st.plotly_chart(fig, use_container_width = True)
