@@ -225,6 +225,7 @@ filtered_df["Sustainable Potential (Dry Matter Tonnes)"] = (
     * filtered_df["Sustainable Removal Factor"]
 )
 
+st.dataframe(filtered_df)
 
 category_energy_df = (
     filtered_df
@@ -233,6 +234,8 @@ category_energy_df = (
         "Sustainable Potential (Dry Matter Tonnes)":"sum"
     })
 )
+
+st.dataframe(category_energy_df)
 
 lhv = {
     "Forestry Biomass": 0.00001796,
