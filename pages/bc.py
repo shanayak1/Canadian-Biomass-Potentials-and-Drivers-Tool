@@ -310,7 +310,11 @@ for i in range(0, len(category_order), 2):
                 color_discrete_map = color_map,
                 title = category
             )
-            
+            fig.update_layout(
+                height=350,
+                showlegend=False,
+                margin=dict(l=20, r=20, t=50, b=20)
+            )
             st.plotly_chart(fig, use_container_width = True)
 
     if i + 1 < len(category_order):
@@ -327,6 +331,11 @@ for i in range(0, len(category_order), 2):
                     color = "Category",
                     color_discrete_map = color_map,
                     title = category
+                )
+                fig.update_layout(
+                    height=350,
+                    showlegend=False,
+                    margin=dict(l=20, r=20, t=50, b=20)
                 )
                 st.plotly_chart(fig, use_container_width = True)
 
