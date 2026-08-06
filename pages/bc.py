@@ -246,7 +246,7 @@ st.subheader('Future Biomass Availability Prediction')
 
 category_energy_df = (
     filtered_df
-    .groupby("Catgeory", as_index=False)
+    .groupby("Category", as_index=False)
     .agg({
         "Sustainable Potential":"sum"
     })
