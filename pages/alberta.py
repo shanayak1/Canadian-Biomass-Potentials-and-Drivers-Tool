@@ -214,9 +214,6 @@ filtered_df.loc[urban_rows, "Sustainable Removal Factor"] = (
     filtered_df.loc[urban_rows, "SubCategory"].map(urban_waste_dict)
 )
 
-st.write(
-    filtered_df.loc[urban_rows]
-)
 #sub in new crop sus factors
 crop_rows = filtered_df["Category"] == "Crop Residue"
 filtered_df.loc[crop_rows, "Sustainable Removal Factor"] = (
