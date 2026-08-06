@@ -235,12 +235,12 @@ category_energy_df = (
 )
 
 lhv = {
-    "Forestry": 17.96,
-    "Forestry Residue": 19.15,
-    "Crop":17.58,
-    "Crop Residue": 17.22,
-    "Livestock Residue":11.08,
-    "Urban Waste": 17.1
+    "Forestry": 0.00001796,
+    "Forestry Residue": 0.00001915,
+    "Crop":0.00001758,
+    "Crop Residue": 0.00001722,
+    "Livestock Residue":0.00001108,
+    "Urban Waste": 0.0000171,
 }
 
 category_energy_df["LHV"] = (
