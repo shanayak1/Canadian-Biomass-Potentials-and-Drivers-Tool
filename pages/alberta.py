@@ -289,22 +289,62 @@ st.plotly_chart(
     #},
     #title = "Production Volume by Biomass Subtype",
 #)
-categories = filtered_df["Category"].unique()
 
-for category in categories:
-    category_df = filtered_df[
-        filtered_df["Category"] == category
-    ]
-    fig = px.bar(
-        category_df,
-        x = "SubCategory",
-        y = "Sustainable Potential (Dry Matter Tonnes)",
-        color = "Category",
-        
-        title = f"{category} Sustainable Potential (DMT)"
-    )
+category_order = [
+    "Forestry Biomass",
+    "Forestry Residue",
+    "Purpose Grown Energy Crops",
+    "Crop Residue",
+    "Livestock Residue",
+    "Urban Waste"
+]
 
-st.plotly_chart(fig, use_container_width = True)
+color_map = {
+    "Forestry Biomass": "#4D8C57",
+    "Forestry Residue": "#2E8B57",
+    "Purpose Grown Energy Crops": "#A3B56B",
+    "Crop Residue": "#F8DE7E",
+    "Livestock Residue": "#78A161",
+    "Urban Waste": "#895129",
+}
+
+#create rows
+for i in range(0, len(category_order), 2):
+    column1, column2 = st.columns(2)
+    with column1:
+        category = category_order[i]
+        category_df = filtered_df[
+            filtered_df["Category"] == category
+        ]
+        if not category_df.empty:
+            fig = px.bar(
+                category_df,
+                x = "SubCategory",
+                y = "Sustainable Potential (Dry Matter Tonnes)",
+                color = "Category",
+                color_discrete_map = color_map,
+                title = category
+            )
+            
+            st.plotly_chart(fig, use_container_width = True)
+
+    if i + 1 < len(category_order):
+        with column2:
+            category = category_order [i+1]
+            category_df = filtered_df[
+                filtered_df["Category"] == category
+            ]
+            if not category_df.empty:
+                fig = px.bar(
+                    category_df,
+                    x = "SubCategory",
+                    y = "Sustainable Potential (Dry Matter Tonnes)",
+                    color = "Category",
+                    color_discrete_map = color_map,
+                    title = category
+                )
+                st.plotly_chart(fig, use_container_width = True)
+                
 
 st.dataframe(
     category_energy_df[
