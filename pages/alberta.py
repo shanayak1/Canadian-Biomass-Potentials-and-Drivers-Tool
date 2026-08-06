@@ -307,6 +307,7 @@ for category in categories:
             "Urban Waste" : "#895129",
             "Crop Residue" : "#F8DE7E",
         }
+        
         title = f"{category} Sustainable Potential (DMT)"
     )
 
