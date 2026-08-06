@@ -225,6 +225,49 @@ filtered_df["Sustainable Potential"] = (
     * filtered_df["Sustainable Removal Factor"]
 )
 
+
+category_energy_df = (
+    filtered_df
+    .groupby("Category", as_index=False)
+    .agg({
+        "Sustainable Potential":"sum"
+    })
+)
+
+lhv = {
+    "Forestry": 17.96,
+    "Forestry Residue": 19.15,
+    "Crop":17.58,
+    "Crop Residue": 17.22,
+    "Livestock Residue":11.08,
+    "Urban Waste": 17.1
+}
+
+category_energy_df["LHV"] = (
+    category_energy_df["Category"].map(lhv)
+)
+#calculate energy
+category_energy_df["Energy Potential (MJ)"] = (
+    category_energy_df["Sustainable Potential"]
+    * category_energy_df["LHV"]
+)
+
+#plot energy potential graph
+energy_fig = px.bar(
+    category_energy_df,
+    x = "Category",
+    y = "Energy Potential (MJ)",
+    color = "Category",
+    title = "Biomass Energy Potential"
+)
+
+st.plotly_chart(
+    energy_fig,
+    use_container_width = True
+)
+
+
+
 fig = px.bar(
     filtered_df,
     x = "SubCategory",
@@ -242,5 +285,3 @@ fig = px.bar(
     
 
 st.plotly_chart(fig, use_container_width = True)
-
-st.subheader('Future Biomass Availability Prediction')
