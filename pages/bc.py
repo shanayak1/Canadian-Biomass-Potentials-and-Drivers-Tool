@@ -247,7 +247,7 @@ category_energy_df["LHV"] = (
     category_energy_df["Category"].map(lhv)
 )
 #calculate energy
-category_energy_df["Energy Potential (MJ)"] = (
+category_energy_df["Energy Potential (PJ)"] = (
     category_energy_df["Sustainable Potential"]
     * category_energy_df["LHV"]
 )
@@ -256,7 +256,7 @@ category_energy_df["Energy Potential (MJ)"] = (
 energy_fig = px.bar(
     category_energy_df,
     x = "Category",
-    y = "Energy Potential (MJ)",
+    y = "Energy Potential (PJ)",
     color = "Category",
     title = "Biomass Energy Potential"
 )

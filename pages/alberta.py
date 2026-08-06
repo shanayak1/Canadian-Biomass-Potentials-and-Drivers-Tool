@@ -220,7 +220,7 @@ filtered_df.loc[crop_rows, "Sustainable Removal Factor"] = (
 )
 
 #calculate all sustainable potentials
-filtered_df["Sustainable Potential"] = (
+filtered_df["Sustainable Potential (Dry Matter Tonnes)"] = (
     filtered_df["Production Volume"]
     * filtered_df["Sustainable Removal Factor"]
 )
@@ -230,7 +230,7 @@ category_energy_df = (
     filtered_df
     .groupby("Category", as_index=False)
     .agg({
-        "Sustainable Potential":"sum"
+        "Sustainable Potential (Dry Matter Tonnes)":"sum"
     })
 )
 
@@ -247,8 +247,8 @@ category_energy_df["LHV"] = (
     category_energy_df["Category"].map(lhv)
 )
 #calculate energy
-category_energy_df["Energy Potential (MJ)"] = (
-    category_energy_df["Sustainable Potential"]
+category_energy_df["Energy Potential (PJ)"] = (
+    category_energy_df["Sustainable Potential (Dry Matter Tonnes)"]
     * category_energy_df["LHV"]
 )
 
@@ -256,7 +256,7 @@ category_energy_df["Energy Potential (MJ)"] = (
 energy_fig = px.bar(
     category_energy_df,
     x = "Category",
-    y = "Energy Potential (MJ)",
+    y = "Energy Potential (PJ)",
     color = "Category",
     title = "Biomass Energy Potential"
 )
@@ -271,7 +271,7 @@ st.plotly_chart(
 fig = px.bar(
     filtered_df,
     x = "SubCategory",
-    y = "Sustainable Potential", 
+    y = "Sustainable Potential (Dry Matter Tonnes)", 
     color = "Category",
     color_discrete_map = {
         "Forestry" : "#4D8C57",
