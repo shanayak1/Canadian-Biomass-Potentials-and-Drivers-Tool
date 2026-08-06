@@ -235,9 +235,9 @@ category_energy_df = (
 )
 
 lhv = {
-    "Forestry": 0.00001796,
+    "Forestry Biomass": 0.00001796,
     "Forestry Residue": 0.00001915,
-    "Crop":0.00001758,
+    "Purpose Grown Energy Crops":0.00001758,
     "Crop Residue": 0.00001722,
     "Livestock Residue":0.00001108,
     "Urban Waste": 0.0000171,
