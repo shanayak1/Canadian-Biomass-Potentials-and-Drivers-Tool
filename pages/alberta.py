@@ -275,21 +275,6 @@ st.plotly_chart(
 )
 
 
-#fig = px.bar(
-    #filtered_df,
-    #x = "SubCategory",
-    #y = "Sustainable Potential (Dry Matter Tonnes)", 
-    #color = "Category",
-    #color_discrete_map = {
-        #"Forestry" : "#4D8C57",
-        #"Livestock Residue" : "#78A161",
-        #"Purpose Grown Energy Crops" : "#A3B56B",
-        #"Urban Waste" : "#895129",
-        #"Crop Residue" : "#F8DE7E",
-    #},
-    #title = "Production Volume by Biomass Subtype",
-#)
-
 category_order = [
     "Forestry Biomass",
     "Forestry Residue",
@@ -344,7 +329,7 @@ for i in range(0, len(category_order), 2):
                     title = category
                 )
                 st.plotly_chart(fig, use_container_width = True)
-                
+
 
 st.dataframe(
     category_energy_df[
