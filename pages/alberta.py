@@ -292,3 +292,11 @@ fig = px.bar(
     
 
 st.plotly_chart(fig, use_container_width = True)
+
+st.dataframe(
+    category_energy_df[
+        ["Category",
+         "Sustainable Potential (Dry Matter Tonnes)",
+         "Energy Potential (PJ)"]
+    ]
+)
