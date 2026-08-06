@@ -54,6 +54,7 @@ if "Forestry Residue" in selected_categories:
     sf_dict["Forestry Residue"] = forestry_sf
 
 sf_dict["Forestry Biomass"] = 1.0
+sf_dict["Purpose Grown Energy Crops"] = 1.0
 
 crops_dict = {}
 
