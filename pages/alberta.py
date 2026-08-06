@@ -8,7 +8,7 @@ st.set_page_config(page_title = "Alberta Biomass Potentials and Availability Dat
                    layout="wide")
 
 st.header('Alberta Biomass Potentials and Availability Data')
-st.subheader('Current Availability as of 2025')
+st.subheader('Biomass Energy Potentials as of 2025')
 
 #load dataframe so our excel worksheet data
 excel_file = 'data.xlsx'
@@ -273,7 +273,7 @@ st.plotly_chart(
     energy_fig,
     use_container_width = True
 )
-
+st.subheader('Biomass Sustainable Potentials as of 2025')
 
 category_order = [
     "Forestry Biomass",
