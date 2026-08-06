@@ -258,6 +258,13 @@ energy_fig = px.bar(
     x = "Category",
     y = "Energy Potential (PJ)",
     color = "Category",
+    color_discrete_map = {
+        "Forestry" : "#4D8C57",
+        "Livestock Residue" : "#78A161",
+        "Purpose Grown Energy Crops" : "#A3B56B",
+        "Urban Waste" : "#895129",
+        "Crop Residue" : "#F8DE7E",
+    },
     title = "Biomass Energy Potential"
 )
 
