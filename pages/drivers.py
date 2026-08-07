@@ -93,12 +93,11 @@ with environmental:
                     st.caption("Type: Environmental")
                     st.divider()
                     st.markdown("""
-                Forest fires decrease the amount of            
+                Forest fires decrease the amount of available forestry residues and decimate current forestry biomass supply. They often limit the amount of harvestable timber. Forest fire frequency has increased significantly over the past decade as climate change brings more severe weather, including excessive heat waves and drought.          
                                 
                 **As a Driver of Biomass Potential and Bioconversion:**
                 
-                Higher crop yields directly increase the amount of biomass produced.""")
-                    st.divider()
+                As forest fires are known to decrease the available timber supply and forestry residues, they directly decrease the amount of forestry biomass and forestry residues available for use. The consistant increase in wildfires proves that this is an important driver of forestry biomass and residue supply.""")
                     st.markdown("""              
                 **Explore further literature**
                                 
@@ -109,12 +108,11 @@ with environmental:
                     st.caption("Type: Environmental")
                     st.divider()
                     st.markdown("""
-                is ___ and __ and influenced by _______.           
+                Disease is common among forests in Alberta and British Columbia. Around 4.6 million hectares are affected by disease in British Columbia annually and approximately 0.5 million hectares are impacted by diesease in Alberta. Out of Alberta and British Columbia's total available forestry land of 38 and 60.3 million hectares respectively, this number may seem insignificant, however, forest pests and disease spread fast and leave no harvestable biomass or biomass residues. These diseases not only limit the current biomass supply, but continue to decrease the supply for years to come as forests require intensive time to recover.          
                                 
                 **As a Driver of Biomass Potential and Bioconversion:**
                 
-                Higher crop yields directly increase the amount of biomass produced.""")
-                    st.divider()
+                Disease and pests directly decrease the amount of available forestry land. If forest dieases are mitigated, forest health can be preserved.""")
                     st.markdown("""              
                 **Explore further literature**
                                 
@@ -132,12 +130,11 @@ with environmental:
                     st.caption("Type: Environmental")
                     st.divider()
                     st.markdown("""
-             is ___ and __ and influenced by _______.           
+            Crop yield is measured by the amount of crops harvested off of agricultural land annually. Crop yields are influenced by a variety of factors, including weather conditions, soil quality, irrigation practices, crop health and disease. The size of cropland available also influences the crop yield. Climate change plays a large role in determining crop yield as extreme weather conditions such as droughts, floods and heatwaves can damage fields and crops, harming present and future yield. Crop yield is a pertinent factor in the agricultural biomass category.          
                             
             **As a Driver of Biomass Potential and Bioconversion:**
             
-            Higher crop yields directly increase the amount of biomass produced.""")
-                    st.divider()
+            Higher crop yields directly increase the amount of agricultural biomass and residues produced.""")
                     st.markdown("""              
             **Explore further literature**
                             
@@ -148,7 +145,7 @@ with environmental:
                     st.caption("Type: Environmental")
                     st.divider()
                     st.markdown("""
-             is ___ and __ and influenced by _______.           
+            .           
                             
             **As a Driver of Biomass Potential and Bioconversion:**
             
