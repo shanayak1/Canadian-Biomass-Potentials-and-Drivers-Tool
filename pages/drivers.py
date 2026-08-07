@@ -52,8 +52,7 @@ with environmental:
                                 
                 **As a Driver of Biomass Potential and Bioconversion:**
                 
-                Afforestation directly impacts the amount of available land for forestry use, therefore, an increase in Afforestation will cause a slight increase in forestry biomass.""")
-                    st.divider()
+                Afforestation directly impacts the amount of available land for forestry use, therefore, an increase in Afforestation will cause a slight increase in forestry biomass as the amount of available land to grow and collect forestry biomass increases.""")
                     st.markdown("""              
                 **Explore further literature**
                                 
@@ -64,12 +63,11 @@ with environmental:
                     st.caption("Type: Environmental")
                     st.divider()
                     st.markdown("""
-                is ___ and __ and influenced by _______.           
+                Forestry biomass and residues are greatly impacted by land availability. Deforestation decreases the area of available forests, countering the effects of afforestation. Deforestation rates in Canada are relatively low compared to most countries in the world, however the reallocation of forestry land for commercial and industrial use has increased as the demand on Canadian infrastructure increases.          
                                 
                 **As a Driver of Biomass Potential and Bioconversion:**
                 
-                _____ directly increase the amount of biomass produced.""")
-                    st.divider()
+                Deforestation directly impacts the amount of available land for forestry use, therefore, an increase in deforestation will cause a decrease in forestry biomass as the amount of available land to grow and collect forestry biomass decreases.""")
                     st.markdown("""              
                 **Explore further literature**
                                 
@@ -80,12 +78,11 @@ with environmental:
                     st.caption("Type: Environmental")
                     st.divider()
                     st.markdown("""
-                is ___ and __ and influenced by _______.           
+                Land availability consists of the land that is allocated by the government for forestry uses. Deforestation and afforestation both affect this driver. The largest causes of change in land availability for forestry are changes in policy reallocating land towards industrial or commercial uses. Canadian policy regarding the conservation of national and provincial parks also decreases the amount of land available for forestry harvesting.           
                                 
                 **As a Driver of Biomass Potential and Bioconversion:**
                 
-                _____ directly increase the amount of biomass produced.""")
-                    st.divider()
+                Land availability directly correlates with the amount of forestry biomass produced. When more land is allocated towards forestry use, more forestry biomass is produced and consequentally, more forestry residues are produced. """)
                     st.markdown("""              
                 **Explore further literature**
                                 
@@ -96,7 +93,7 @@ with environmental:
                     st.caption("Type: Environmental")
                     st.divider()
                     st.markdown("""
-                is ___ and __ and influenced by _______.           
+                Forest fires decrease the amount of            
                                 
                 **As a Driver of Biomass Potential and Bioconversion:**
                 
@@ -167,11 +164,11 @@ with environmental:
                     st.caption("Type: Environmental")
                     st.divider()
                     st.markdown("""
-             is ___ and __ and influenced by _______.           
+            Land availability consists of the land that is allocated by the government for forestry uses. Deforestation and afforestation both affect this driver. The largest causes of change in land availability for forestry are changes in policy reallocating land towards industrial or commercial uses. Canadian policy regarding the conservation of national and provincial parks also decreases the amount of land available for forestry harvesting.           
                             
             **As a Driver of Biomass Potential and Bioconversion:**
             
-            Higher crop yields directly increase the amount of biomass produced.""")
+            Land availability directly correlates with the amount of agricultural biomass produced. When more land is allocated towards agricultural use, more agricultural biomass is produced and consequentally, more agricultural residues are produced.""")
                     st.divider()
                     st.markdown("""              
             **Explore further literature**
