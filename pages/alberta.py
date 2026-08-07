@@ -8,7 +8,8 @@ st.set_page_config(page_title = "Alberta Biomass Potentials and Availability Dat
                    layout="wide")
 
 st.header('Alberta Biomass Potentials and Availability Data')
-st.subheader('Biomass Energy Potentials as of 2025')
+st.subheader('Biomass Energy Potentials as of 2025:')
+st.text("The following Biomass Potentials are grouped first by energy potential, and then by sustainable potential. The energy potential informs the comparison between different biomass categories in terms of how they can be used in the Canadian Bioeconomy. The Sustainable Potentials presented can only be compared within their category to ensure a fair comparison because a comparison of different biomass potentials in dry matter tonnes (DMT) is only valid for biomass subcategories of the same broader category to ensrue that they are compared alongside biomass with a similar heating value.")
 
 #load dataframe so our excel worksheet data
 excel_file = 'data.xlsx'
@@ -273,7 +274,7 @@ st.plotly_chart(
     energy_fig,
     use_container_width = True
 )
-st.subheader('Biomass Sustainable Potentials as of 2025')
+st.subheader('Biomass Sustainable Potentials as of 2025:')
 
 category_order = [
     "Forestry Biomass",
