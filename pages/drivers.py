@@ -145,12 +145,11 @@ with environmental:
                     st.caption("Type: Environmental")
                     st.divider()
                     st.markdown("""
-            .           
+            Cropland consists of the amount of land allocated for purpose grown energy crops. Cropland can increase if more resources are allocated towards the agricultural industry, and it can be decreased if governmental spending shifts away from agriculture and the land is reallocated for industrial or commercial use. Cropland can also see decreases if extreme weather conditions render the soil infertile.          
                             
             **As a Driver of Biomass Potential and Bioconversion:**
             
-            Higher crop yields directly increase the amount of biomass produced.""")
-                    st.divider()
+            More cropland directly increase the amount of agricultural biomass produced as there is a larger space to grow crops.""")
                     st.markdown("""              
             **Explore further literature**
                             
@@ -166,7 +165,6 @@ with environmental:
             **As a Driver of Biomass Potential and Bioconversion:**
             
             Land availability directly correlates with the amount of agricultural biomass produced. When more land is allocated towards agricultural use, more agricultural biomass is produced and consequentally, more agricultural residues are produced.""")
-                    st.divider()
                     st.markdown("""              
             **Explore further literature**
                             
@@ -177,12 +175,11 @@ with environmental:
                     st.caption("Type: Environmental")
                     st.divider()
                     st.markdown("""
-             is ___ and __ and influenced by _______.           
+            Extreme weather phenomena have seen an increase in frequency as the effects of climate change grow stronger. Extreme weather includes droughts, floods, heatwaves ad storms. All of these negatively impact the healthy growth of crops and damage cropland.
                             
             **As a Driver of Biomass Potential and Bioconversion:**
             
-            Higher crop yields directly increase the amount of biomass produced.""")
-                    st.divider()
+            Extreme weather phenomena can damage cropland as well as reduce the healthy crop harvest, decreasing the amount of agricultural biomass and residues available.""")
                     st.markdown("""              
             **Explore further literature**
                             
@@ -193,12 +190,11 @@ with environmental:
                     st.caption("Type: Environmental")
                     st.divider()
                     st.markdown("""
-             is ___ and __ and influenced by _______.           
+            Climate change is a long term shift in weather patterns globally, commonly causing an increase in temperatures and extreme weather. It is mainly caused by greenhouse gas emmissions from vehicles and agricultural systems into the atmosphere. Climate change raises temperatures, often resulting in longer periods of warm weather which allows for an increase in crop growing seasons. While this may allow for longer harvesting seasons, it also increases the chances of extreme weather that damages crops and cropland.             
                             
             **As a Driver of Biomass Potential and Bioconversion:**
             
-            Higher crop yields directly increase the amount of biomass produced.""")
-                    st.divider()
+            Despite having a small beneficial impact on crop harvesting and growing seasons, climate change increases frequency of extreme weather, causing a greater risk to crops and cropland. This can result in a decrease in harvestable agricultural biomass and residues.""")
                     st.markdown("""              
             **Explore further literature**
                             
@@ -220,17 +216,16 @@ with tech:
         with right:
                 # c1 = st.columns(1)
                 # with c1:
-            with st.popover("Farming Practices/Equipment"):
-                st.subheader("Farming Practices/Equipment")
+            with st.popover("Harvesting Equipment"):
+                st.subheader("Harvesting Equipment")
                 st.caption("Type: Technological")
                 st.divider()
                 st.markdown("""
-            Crop yield is ___ and __ and influenced by _______.           
+            As harvesting equiptment sees improvements in efficiency and a decrease in costs, more forestry biomass is able to be harvested. It also allows for a greater output when harvesting, allowing for more of the residues to be harvested and decreasing the amount left on the field. It is to be noted that this improvement is still restricted by the sustainable guidelines surrounding forestry residue harvesting.            
                             
             **As a Driver of Biomass Potential and Bioconversion:**
             
-            Higher crop yields directly increase the amount of biomass produced.""")
-                st.divider()
+            Improvements on harvesting equipment increase the amount of forestry biomasses collected efficiently and decrease costs surrounding harvesting, promoting the use of forestry residues as an energy source.""")
                 st.markdown("""              
             **Explore further literature**
                             
@@ -245,12 +240,11 @@ with tech:
                 st.caption("Type: Technological")
                 st.divider()
                 st.markdown("""
-             is ___ and __ and influenced by _______.           
+            Sustainable removal guidelines restrict the amount of agricultural biomass residues that are harvested from cropland. These guidelines ensure that enough residue is left on the land to preserve soil fertility and allow for future crops to succeed on the land.         
                             
             **As a Driver of Biomass Potential and Bioconversion:**
             
-            Higher crop yields directly increase the amount of biomass produced.""")
-                st.divider()
+            As sustainable removal guidelines are improved and increased, the amount of agricultural residues harvested significantly decreases.""")
                 st.markdown("""              
             **Explore further literature**
                             
@@ -283,12 +277,11 @@ with social:
                 st.caption("Type: Social")
                 st.divider()
                 st.markdown("""
-            Livestock population is ___ and __ and influenced by _______.           
+            Livestock population consists of the number of livestock living on farms within the province. Its numbers are affected by birth and death rates, disease and weather. Disease and poor weather can result in higher death rates and significantly impact the healthy livestock population.           
                             
             **As a Driver of Biomass Potential and Bioconversion:**
             
-            Higher crop yields directly increase the amount of biomass produced.""")
-                st.divider()
+            A greater livestock population directly results in greater livestock residues produced and vice versa.""")
                 st.markdown("""              
             **Explore further literature**
                             
@@ -303,12 +296,11 @@ with social:
                 st.caption("Type: Social")
                 st.divider()
                 st.markdown("""
-            Livestock population is ___ and __ and influenced by _______.           
+            The population of cities and towns is impacted by birth rates, death rates, immigration and emmigration. An increasing shift towards the rural lifestyle has lead to emmigration of people from cities into towns. As towns oftentimes have smaller waste processing systems, this increase in population does not necessarily result in an increase of urban waste biomass as many towns do not have the infrastructure to process large amounts of waste.           
                                             
             **As a Driver of Biomass Potential and Bioconversion:**
                             
-            Higher crop yields directly increase the amount of biomass produced.""")
-                st.divider()
+            City population drives the amount of urban waste biomass produced, whereas an shift of population into towns can decrease the amount of biomass produced unless infrastructure can meet the excessive load.""")
                 st.markdown("""              
             **Explore further literature**
                                             
