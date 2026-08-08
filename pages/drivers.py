@@ -369,7 +369,7 @@ with political:
                                     
             **As a Driver of Biomass Potential and Bioconversion:**
                     
-            An increase in governmental policies supporting the use of biomass and renewable energy sources allows for an increase in funding towards the collection and useage of biomass as an energy resource, increasing the amount produced and collected.""")
+            An increase in governmental policies supporting the use of biomass and renewable energy sources allows for an increase in funding towards the collection and useage of biomass as an energy resource, increasing the amount produced and collected. This also results in improvements in forestry residue processing and lumber processing facilities.""")
                 st.markdown("""              
             **Explore further literature**
                                     
@@ -428,7 +428,7 @@ with political:
                                             
             **As a Driver of Biomass Potential and Bioconversion:**
                             
-            An increase in governmental policies supporting the use of biomass and renewable energy sources allows for an increase in funding towards the collection and useage of biomass as an energy resource, increasing the amount produced and collected.""")
+            An increase in governmental policies supporting the use of biomass and renewable energy sources allows for an increase in funding towards the collection and useage of biomass as an energy resource, increasing the amount produced and collected. This also leads to improvements in urban waste processing infrastructure.""")
                 st.markdown("""              
             **Explore further literature**
                                             
