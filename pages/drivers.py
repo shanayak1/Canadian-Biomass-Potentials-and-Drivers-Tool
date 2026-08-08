@@ -203,6 +203,21 @@ with environmental:
         left, right = st.columns([2,6])
         with left:
             st.markdown("Livestock Residues")
+        with right:
+            with st.popover("Livestock Population"):
+                st.subheader("Livestock Population")
+                st.caption("Type: Social")
+                st.divider()
+                st.markdown("""
+            Livestock population consists of the number of livestock living on farms within the province. Its numbers are affected by birth and death rates, disease and weather. Disease and poor weather can result in higher death rates and significantly impact the healthy livestock population.           
+                            
+            **As a Driver of Biomass Potential and Bioconversion:**
+            
+            A greater livestock population directly results in greater livestock residues produced and vice versa.""")
+                st.markdown("""              
+            **Explore further literature**
+                            
+            insert links here """)
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -271,21 +286,6 @@ with social:
         left, right = st.columns([2,6])
         with left:
             st.markdown("Livestock Residue")
-        with right:
-            with st.popover("Livestock Population"):
-                st.subheader("Livestock Population")
-                st.caption("Type: Social")
-                st.divider()
-                st.markdown("""
-            Livestock population consists of the number of livestock living on farms within the province. Its numbers are affected by birth and death rates, disease and weather. Disease and poor weather can result in higher death rates and significantly impact the healthy livestock population.           
-                            
-            **As a Driver of Biomass Potential and Bioconversion:**
-            
-            A greater livestock population directly results in greater livestock residues produced and vice versa.""")
-                st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
