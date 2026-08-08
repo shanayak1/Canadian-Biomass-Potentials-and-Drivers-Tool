@@ -317,12 +317,11 @@ with economic:
                 st.caption("Type: Economic")
                 st.divider()
                 st.markdown("""
-            Cost is ___ and __ and influenced by _______.           
+            Increasing costs to harvest forestry biomass as well as increasing costs of lumber processing facilities can deincentivize the use of forestry biomass and residues as an energy alternative. Increasing costs to process and convert forestry biomass and residues to energy can also decrease desire to utilize this biomass for energy purposes.        
                             
             **As a Driver of Biomass Potential and Bioconversion:**
             
-            Higher costs ____ the amount of biomass produced.""")
-                st.divider()
+            Higher costs for harvesting, processing and converting forestry biomass and residues decreases their useage as an energy alternative.""") 
                 st.markdown("""              
             **Explore further literature**
                             
@@ -337,12 +336,11 @@ with economic:
                 st.caption("Type: Economic")
                 st.divider()
                 st.markdown("""
-            Cost is ___ and __ and influenced by _______.           
+            Costs surrounding farming equipment necessary to harvest crops and residues impacts how farmers approach the useage of agricultural biomass as an energy replacement.           
                             
             **As a Driver of Biomass Potential and Bioconversion:**
             
-            Higher costs ____ the amount of biomass produced.""")
-                st.divider()
+            Decreasing costs for farming equipment can increase the amount of agricultural biomass and residues harvested.""")
                 st.markdown("""              
             **Explore further literature**
                             
@@ -351,22 +349,6 @@ with economic:
         left, right = st.columns([2,6])
         with left:
             st.markdown("Livestock Residue")
-        with right:
-            with st.popover("Cost"):
-                st.subheader("Cost")
-                st.caption("Type: Economic")
-                st.divider()
-                st.markdown("""
-            Cost is ___ and __ and influenced by _______.           
-                            
-            **As a Driver of Biomass Potential and Bioconversion:**
-            
-            Higher costs ____ the amount of biomass produced.""")
-                st.divider()
-                st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -383,12 +365,11 @@ with political:
                 st.caption("Type: Political")
                 st.divider()
                 st.markdown("""
-            Canadian Policy involves the various regulations and laws put into place by the Canadian Government in regards to environmental issues, climate change and sustainability regulations. Policies such as the Net Zero Emissions goal can impact the funding and resources allocated towards biomass resources.           
+            Canadian Policy involves the various regulations and laws put into place by the Canadian Government in regards to environmental issues, climate change and sustainability regulations. Policies such as the Net Zero Emissions goal can impact the funding and resources allocated towards biomass resources. Canadian policies can also promote biomass as a bioenergy source by supporting the use of renewable energy sources. This is done through increases in governmental funding, decreases in restrictions surrounding sustainable harvesting practices.      
                                     
             **As a Driver of Biomass Potential and Bioconversion:**
                     
             An increase in governmental policies supporting the use of biomass and renewable energy sources allows for an increase in funding towards the collection and useage of biomass as an energy resource, increasing the amount produced and collected.""")
-                st.divider()
                 st.markdown("""              
             **Explore further literature**
                                     
@@ -404,12 +385,11 @@ with political:
                 st.caption("Type: Political")
                 st.divider()
                 st.markdown("""
-            Canadian Policy involves the various regulations and laws put into place by the Canadian Government in regards to environmental issues, climate change and sustainability regulations. Policies such as the Net Zero Emissions goal can impact the funding and resources allocated towards biomass resources.           
+            Canadian Policy involves the various regulations and laws put into place by the Canadian Government in regards to environmental issues, climate change and sustainability regulations. Policies such as the Net Zero Emissions goal can impact the funding and resources allocated towards biomass resources. Canadian policies can also promote biomass as a bioenergy source by supporting the use of renewable energy sources. This is done through increases in governmental funding, decreases in restrictions surrounding sustainable harvesting practices. 
                                             
             **As a Driver of Biomass Potential and Bioconversion:**
                             
             An increase in governmental policies supporting the use of biomass and renewable energy sources allows for an increase in funding towards the collection and useage of biomass as an energy resource, increasing the amount produced and collected.""")
-                st.divider()
                 st.markdown("""              
             **Explore further literature**
                                             
@@ -425,12 +405,11 @@ with political:
                 st.caption("Type: Political")
                 st.divider()
                 st.markdown("""
-            Canadian Policy involves the various regulations and laws put into place by the Canadian Government in regards to environmental issues, climate change and sustainability regulations. Policies such as the Net Zero Emissions goal can impact the funding and resources allocated towards biomass resources.           
+            Canadian Policy involves the various regulations and laws put into place by the Canadian Government in regards to environmental issues, climate change and sustainability regulations. Policies such as the Net Zero Emissions goal can impact the funding and resources allocated towards biomass resources. Canadian policies can also promote biomass as a bioenergy source by supporting the use of renewable energy sources. This is done through increases in governmental funding, decreases in restrictions surrounding sustainable harvesting practices.     
                                             
             **As a Driver of Biomass Potential and Bioconversion:**
                             
             An increase in governmental policies supporting the use of biomass and renewable energy sources allows for an increase in funding towards the collection and useage of biomass as an energy resource, increasing the amount produced and collected.""")
-                st.divider()
                 st.markdown("""              
             **Explore further literature**
                                             
@@ -444,12 +423,12 @@ with political:
                 st.subheader("Canadian Policy")
                 st.caption("Type: Political")
                 st.divider()
-                st.markdown("""Canadian Policy involves the various regulations and laws put into place by the Canadian Government in regards to environmental issues, climate change and sustainability regulations. Policies such as the Net Zero Emissions goal can impact the funding and resources allocated towards biomass resources.           
+                st.markdown("""
+            Canadian Policy involves the various regulations and laws put into place by the Canadian Government in regards to environmental issues, climate change and sustainability regulations. Policies such as the Net Zero Emissions goal can impact the funding and resources allocated towards biomass resources. Canadian policies can also promote biomass as a bioenergy source by supporting the use of renewable energy sources. This is done through increases in governmental funding, decreases in restrictions surrounding sustainable harvesting practices. 
                                             
             **As a Driver of Biomass Potential and Bioconversion:**
                             
             An increase in governmental policies supporting the use of biomass and renewable energy sources allows for an increase in funding towards the collection and useage of biomass as an energy resource, increasing the amount produced and collected.""")
-                st.divider()
                 st.markdown("""              
             **Explore further literature**
                                             
