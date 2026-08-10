@@ -53,10 +53,7 @@ with environmental:
                 **As a Driver of Biomass Potential and Bioconversion:**
                 
                 Afforestation directly impacts the amount of available land for forestry use, therefore, an increase in Afforestation will cause a slight increase in forestry biomass as the amount of available land to grow and collect forestry biomass increases.""")
-                    st.markdown("""              
-                **Explore further literature**
-                                
-                insert links here """)
+
             with c2:
                 with st.popover("Deforestation"):
                     st.subheader("Deforestation")
@@ -68,10 +65,7 @@ with environmental:
                 **As a Driver of Biomass Potential and Bioconversion:**
                 
                 Deforestation directly impacts the amount of available land for forestry use, therefore, an increase in deforestation will cause a decrease in forestry biomass as the amount of available land to grow and collect forestry biomass decreases.""")
-                    st.markdown("""              
-                **Explore further literature**
-                                
-                insert links here """)
+
             with c3:
                 with st.popover("Land Availability"):
                     st.subheader("Land Availability")
@@ -83,10 +77,7 @@ with environmental:
                 **As a Driver of Biomass Potential and Bioconversion:**
                 
                 Land availability directly correlates with the amount of forestry biomass produced. When more land is allocated towards forestry use, more forestry biomass is produced and consequentally, more forestry residues are produced. """)
-                    st.markdown("""              
-                **Explore further literature**
-                                
-                insert links here """)
+
             with c4:
                 with st.popover("Forest Fire"):
                     st.subheader("Forest Fire")
@@ -98,10 +89,7 @@ with environmental:
                 **As a Driver of Biomass Potential and Bioconversion:**
                 
                 As forest fires are known to decrease the available timber supply and forestry residues, they directly decrease the amount of forestry biomass and forestry residues available for use. The consistant increase in wildfires proves that this is an important driver of forestry biomass and residue supply.""")
-                    st.markdown("""              
-                **Explore further literature**
-                                
-                insert links here """)
+
             with c5:
                 with st.popover("Disease"):
                     st.subheader("Disease")
@@ -113,10 +101,7 @@ with environmental:
                 **As a Driver of Biomass Potential and Bioconversion:**
                 
                 Disease and pests directly decrease the amount of available forestry land. If forest dieases are mitigated, forest health can be preserved.""")
-                    st.markdown("""              
-                **Explore further literature**
-                                
-                insert links here """)
+
                     
     with st.container(border=True):
         left, right = st.columns([2,6])
@@ -135,10 +120,7 @@ with environmental:
             **As a Driver of Biomass Potential and Bioconversion:**
             
             Higher crop yields directly increase the amount of agricultural biomass and residues produced.""")
-                    st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
+
             with c2:
                 with st.popover("Cropland"):
                     st.subheader("Cropland")
@@ -150,10 +132,7 @@ with environmental:
             **As a Driver of Biomass Potential and Bioconversion:**
             
             More cropland directly increase the amount of agricultural biomass produced as there is a larger space to grow crops.""")
-                    st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
+
             with c3:
                 with st.popover("Land Availability"):
                     st.subheader("Land Availability")
@@ -165,10 +144,7 @@ with environmental:
             **As a Driver of Biomass Potential and Bioconversion:**
             
             Land availability directly correlates with the amount of agricultural biomass produced. When more land is allocated towards agricultural use, more agricultural biomass is produced and consequentally, more agricultural residues are produced.""")
-                    st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
+
             with c4:
                 with st.popover("Extreme Weather"):
                     st.subheader("Extreme Weather")
@@ -180,10 +156,7 @@ with environmental:
             **As a Driver of Biomass Potential and Bioconversion:**
             
             Extreme weather phenomena can damage cropland as well as reduce the healthy crop harvest, decreasing the amount of agricultural biomass and residues available.""")
-                    st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
+
             with c5:
                 with st.popover("Climate Change"):
                     st.subheader("Climate Change")
@@ -195,10 +168,7 @@ with environmental:
             **As a Driver of Biomass Potential and Bioconversion:**
             
             Despite having a small beneficial impact on crop harvesting and growing seasons, climate change increases frequency of extreme weather, causing a greater risk to crops and cropland. This can result in a decrease in harvestable agricultural biomass and residues.""")
-                    st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
+
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -214,10 +184,7 @@ with environmental:
             **As a Driver of Biomass Potential and Bioconversion:**
             
             A greater livestock population directly results in greater livestock residues produced and vice versa.""")
-                st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
+
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -241,10 +208,7 @@ with tech:
             **As a Driver of Biomass Potential and Bioconversion:**
             
             Improvements on harvesting equipment increase the amount of forestry biomasses collected efficiently and decrease costs surrounding harvesting, promoting the use of forestry residues as an energy source.""")
-                st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
+
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -260,10 +224,7 @@ with tech:
             **As a Driver of Biomass Potential and Bioconversion:**
             
             As sustainable removal guidelines are improved and increased, the amount of agricultural residues harvested significantly decreases.""")
-                st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
+
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -301,10 +262,7 @@ with social:
             **As a Driver of Biomass Potential and Bioconversion:**
                             
             City population drives the amount of urban waste biomass produced, whereas an shift of population into towns can decrease the amount of biomass produced unless infrastructure can meet the excessive load.""")
-                st.markdown("""              
-            **Explore further literature**
-                                            
-            insert links here """)
+
 
 with economic:
     with st.container(border=True):
@@ -322,10 +280,7 @@ with economic:
             **As a Driver of Biomass Potential and Bioconversion:**
             
             Higher costs for harvesting, processing and converting forestry biomass and residues decreases their useage as an energy alternative.""") 
-                st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
+
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -341,10 +296,7 @@ with economic:
             **As a Driver of Biomass Potential and Bioconversion:**
             
             Decreasing costs for farming equipment can increase the amount of agricultural biomass and residues harvested.""")
-                st.markdown("""              
-            **Explore further literature**
-                            
-            insert links here """)
+
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -370,10 +322,7 @@ with political:
             **As a Driver of Biomass Potential and Bioconversion:**
                     
             An increase in governmental policies supporting the use of biomass and renewable energy sources allows for an increase in funding towards the collection and useage of biomass as an energy resource, increasing the amount produced and collected. This also results in improvements in forestry residue processing and lumber processing facilities.""")
-                st.markdown("""              
-            **Explore further literature**
-                                    
-            insert links here """)
+
                 
     with st.container(border=True):
         left, right = st.columns([2,6])
@@ -390,10 +339,7 @@ with political:
             **As a Driver of Biomass Potential and Bioconversion:**
                             
             An increase in governmental policies supporting the use of biomass and renewable energy sources allows for an increase in funding towards the collection and useage of biomass as an energy resource, increasing the amount produced and collected.""")
-                st.markdown("""              
-            **Explore further literature**
-                                            
-            insert links here """)
+
             
     with st.container(border=True):
         left, right = st.columns([2,6])
@@ -410,10 +356,7 @@ with political:
             **As a Driver of Biomass Potential and Bioconversion:**
                             
             An increase in governmental policies supporting the use of biomass and renewable energy sources allows for an increase in funding towards the collection and useage of biomass as an energy resource, increasing the amount produced and collected.""")
-                st.markdown("""              
-            **Explore further literature**
-                                            
-            insert links here """)
+
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -429,8 +372,3 @@ with political:
             **As a Driver of Biomass Potential and Bioconversion:**
                             
             An increase in governmental policies supporting the use of biomass and renewable energy sources allows for an increase in funding towards the collection and useage of biomass as an energy resource, increasing the amount produced and collected. This also leads to improvements in urban waste processing infrastructure.""")
-                st.markdown("""              
-            **Explore further literature**
-                                            
-            insert links here """)
-
