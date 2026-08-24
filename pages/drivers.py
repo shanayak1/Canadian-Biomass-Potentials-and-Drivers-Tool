@@ -14,26 +14,26 @@ st.subheader('Key Drivers:')
 #create pestel tabs
 political, economic, social, tech, environmental, legal = st.tabs(["Political", "Economic", "Social", "Technological", "Environmental", "Legal"])
 
-with legal:
-    with st.container(border=True):
-        left, right = st.columns([2,6])
-        with left:
-            st.markdown("Forestry Biomass and Residues")
+#with legal:
+    #with st.container(border=True):
+        #left, right = st.columns([2,6])
+        #with left:
+            #st.markdown("Forestry Biomass and Residues")
 
-    with st.container(border=True):
-        left, right = st.columns([2,6])
-        with left:
-            st.markdown("Agricultural Biomass and Residues")
+    #with st.container(border=True):
+        #left, right = st.columns([2,6])
+        #with left:
+            #st.markdown("Agricultural Biomass and Residues")
 
-    with st.container(border=True):
-        left, right = st.columns([2,6])
-        with left:
-            st.markdown("Livestock Residue")
+    #with st.container(border=True):
+        #left, right = st.columns([2,6])
+        #with left:
+            #st.markdown("Livestock Residue")
 
-    with st.container(border=True):
-        left, right = st.columns([2,6])
-        with left:
-            st.markdown("Urban Waste")
+    #with st.container(border=True):
+        #left, right = st.columns([2,6])
+        #with left:
+            #st.markdown("Urban Waste")
            
 with environmental:
     with st.container(border=True):
@@ -184,11 +184,6 @@ with environmental:
             **As a Driver of Biomass Potential and Bioconversion:**
             
             A greater livestock population directly results in greater livestock residues produced and vice versa.""")
-
-    with st.container(border=True):
-        left, right = st.columns([2,6])
-        with left:
-            st.markdown("Urban Waste")
             
 with tech:
     with st.container(border=True):
