@@ -12,7 +12,7 @@ st.header('Biomass Potential and Availibility Drivers')
 st.subheader('Key Drivers:')
 
 #create pestel tabs
-political, economic, social, tech, environmental, legal = st.tabs(["Political", "Economic", "Social", "Technological", "Environmental", "Legal"])
+political, economic, social, tech, environmental = st.tabs(["Political", "Economic", "Social", "Technological", "Environmental"])
 
 #with legal:
     #with st.container(border=True):
