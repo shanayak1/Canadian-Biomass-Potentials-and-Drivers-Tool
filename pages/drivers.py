@@ -220,28 +220,7 @@ with tech:
             
             As sustainable removal guidelines are improved and increased, the amount of agricultural residues harvested significantly decreases.""")
 
-    with st.container(border=True):
-        left, right = st.columns([2,6])
-        with left:
-            st.markdown("Livestock Residue")
-    with st.container(border=True):
-        left, right = st.columns([2,6])
-        with left:
-            st.markdown("Urban Waste")
-
 with social:
-    with st.container(border=True):
-        left, right = st.columns([2,6])
-        with left:
-            st.markdown("Forestry Biomass and Residues")
-    with st.container(border=True):
-        left, right = st.columns([2,6])
-        with left:
-            st.markdown("Agricultural Biomass and Residues")
-    with st.container(border=True):
-        left, right = st.columns([2,6])
-        with left:
-            st.markdown("Livestock Residue")
     with st.container(border=True):
         left, right = st.columns([2,6])
         with left:
@@ -292,14 +271,6 @@ with economic:
             
             Decreasing costs for farming equipment can increase the amount of agricultural biomass and residues harvested.""")
 
-    with st.container(border=True):
-        left, right = st.columns([2,6])
-        with left:
-            st.markdown("Livestock Residue")
-    with st.container(border=True):
-        left, right = st.columns([2,6])
-        with left:
-            st.markdown("Urban Waste")
                 
 with political:
     with st.container(border=True):
