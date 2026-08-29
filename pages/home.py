@@ -10,3 +10,11 @@ st.subheader("Terminology")
 
 st.text("The following terminology is used frequently throughout the biomass potentials and drivers tool:")
 
+with st.container(border=True):
+    left, right = st.columns([2,6])
+    with left:
+        st.markdown("Term")
+    with right:
+        st.markdown("Definition")
+
+
