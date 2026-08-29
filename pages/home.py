@@ -59,3 +59,6 @@ cats_df = pd.DataFrame({
 
 with st.container():
     st.table(cats_df)
+
+st.subheader("References")
+st.text("The following references were used in the formulation and research behind this Biomass Tool:")
