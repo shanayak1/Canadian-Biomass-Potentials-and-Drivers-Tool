@@ -116,37 +116,33 @@ references = """
 
 [26] B. D. Titus et al., “Sustainable forest biomass: a review of current residue harvesting guidelines,” Energ Sustain Soc, vol. 11, no. 1, p. 10, Apr. 2021, doi: 10.1186/s13705-021-00281-w.
 
-[27] D. K. N. Szarka, “Introduction to bioeconomy”.
+[27] Statistics Canada, “Lumber production, shipments, and stocks by species, monthly.” Government of Canada. doi: 10.25318/1610001701-ENG.
 
-[28] D. K. N. Szarka, “Biomass and its potential”.
+[28] S. Richter, N. Szarka, A. Bezama, and D. Thrän, “What Drives a Future German Bioeconomy? A Narrative and STEEPLE Analysis for Explorative Characterisation of Scenario Drivers,” Sustainability, vol. 14, no. 5, p. 3045, Jan. 2022, doi: 10.3390/su14053045.
 
-[29] Statistics Canada, “Lumber production, shipments, and stocks by species, monthly.” Government of Canada. doi: 10.25318/1610001701-ENG.
+[29] G. Reznowski, “LibGuides: Industry Research: PESTEL Analysis.” Accessed: Jun. 21, 2026. [Online]. Available: https://libguides.libraries.wsu.edu/c.php?g=294263&p=4358409
 
-[30] S. Richter, N. Szarka, A. Bezama, and D. Thrän, “What Drives a Future German Bioeconomy? A Narrative and STEEPLE Analysis for Explorative Characterisation of Scenario Drivers,” Sustainability, vol. 14, no. 5, p. 3045, Jan. 2022, doi: 10.3390/su14053045.
+[30] X. Li, E. Mupondwa, S. Panigrahi, L. Tabil, S. Sokhansanj, and M. Stumborg, “A review of agricultural crop residue supply in Canada for cellulosic ethanol production,” Renewable and Sustainable Energy Reviews, vol. 16, no. 5, pp. 2954–2965, Jun. 2012, doi: 10.1016/j.rser.2012.02.013.
 
-[31] G. Reznowski, “LibGuides: Industry Research: PESTEL Analysis.” Accessed: Jun. 21, 2026. [Online]. Available: https://libguides.libraries.wsu.edu/c.php?g=294263&p=4358409
+[31] L. M. Jacob, K. N. Irvine, B. B. Beza, and L. H. C. Chua, “Adaptive resilience in wetlands: An integrative review of principles, research gaps, and ways forward for better adaptive management,” Ecological Engineering, vol. 220, p. 107720, Oct. 2025, doi: 10.1016/j.ecoleng.2025.107720.
 
-[32] X. Li, E. Mupondwa, S. Panigrahi, L. Tabil, S. Sokhansanj, and M. Stumborg, “A review of agricultural crop residue supply in Canada for cellulosic ethanol production,” Renewable and Sustainable Energy Reviews, vol. 16, no. 5, pp. 2954–2965, Jun. 2012, doi: 10.1016/j.rser.2012.02.013.
+[32] S. C. Government of Canada, “Wastewater volumes processed by municipal sewage systems.” Accessed: Jul. 09, 2026. [Online]. Available: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3810009901
 
-[33] L. M. Jacob, K. N. Irvine, B. B. Beza, and L. H. C. Chua, “Adaptive resilience in wetlands: An integrative review of principles, research gaps, and ways forward for better adaptive management,” Ecological Engineering, vol. 220, p. 107720, Oct. 2025, doi: 10.1016/j.ecoleng.2025.107720.
+[33] S. C. Government of Canada, “Lumber production, shipments, and stocks by species, monthly.” Accessed: Jun. 01, 2026. [Online]. Available: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1610001701
 
-[34] S. C. Government of Canada, “Wastewater volumes processed by municipal sewage systems.” Accessed: Jul. 09, 2026. [Online]. Available: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3810009901
+[34] S. C. Government of Canada, “British Columbia lumber production, monthly.” Accessed: Jul. 09, 2026. [Online]. Available: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1610001705
 
-[35] S. C. Government of Canada, “Lumber production, shipments, and stocks by species, monthly.” Accessed: Jun. 01, 2026. [Online]. Available: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1610001701
+[35] C. E. R. Government of Canada, “CER – Market Snapshot: Canada’s Bioenergy Diversity and Potential.” Accessed: May 08, 2026. [Online]. Available: https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/2023/market-snapshot-canada-bioenergy-diversity-potential.html
 
-[36] S. C. Government of Canada, “British Columbia lumber production, monthly.” Accessed: Jul. 09, 2026. [Online]. Available: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1610001705
+[36] N. R. Canada, “The State of Canada’s Forests: Annual Report 2025.” Accessed: Jul. 08, 2026. [Online]. Available: https://natural-resources.canada.ca/forests-forestry/state-canada-forests/state-canada-s-forests-annual-report-2025
 
-[37] C. E. R. Government of Canada, “CER – Market Snapshot: Canada’s Bioenergy Diversity and Potential.” Accessed: May 08, 2026. [Online]. Available: https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/2023/market-snapshot-canada-bioenergy-diversity-potential.html
+[37] N. R. Canada, “Bioenergy systems.” Accessed: May 09, 2026. [Online]. Available: https://natural-resources.canada.ca/energy-sources/renewable-energy/bioenergy-systems
 
-[38] N. R. Canada, “The State of Canada’s Forests: Annual Report 2025.” Accessed: Jul. 08, 2026. [Online]. Available: https://natural-resources.canada.ca/forests-forestry/state-canada-forests/state-canada-s-forests-annual-report-2025
+[38] N. R. Canada, “Domestic production.” Accessed: Jul. 09, 2026. [Online]. Available: https://cfs.cloud.nrcan.gc.ca/statsprofile/investment/domestic-production.html
 
-[39] N. R. Canada, “Bioenergy systems.” Accessed: May 09, 2026. [Online]. Available: https://natural-resources.canada.ca/energy-sources/renewable-energy/bioenergy-systems
+[39] A. and A.-F. Canada, “Canada: Outlook for Principal Field Crops, 2026-05-21.” Accessed: Jul. 09, 2026. [Online]. Available: https://agriculture.canada.ca/en/sector/crops/reports-statistics/canada-outlook-principal-field-crops-2026-05-21
 
-[40] N. R. Canada, “Domestic production.” Accessed: Jul. 09, 2026. [Online]. Available: https://cfs.cloud.nrcan.gc.ca/statsprofile/investment/domestic-production.html
-
-[41] A. and A.-F. Canada, “Canada: Outlook for Principal Field Crops, 2026-05-21.” Accessed: Jul. 09, 2026. [Online]. Available: https://agriculture.canada.ca/en/sector/crops/reports-statistics/canada-outlook-principal-field-crops-2026-05-21
-
-[42] B. Boundy and S. C. Davis, “Biomass Energy Data Book: Edition 3”.
+[40] B. Boundy and S. C. Davis, “Biomass Energy Data Book: Edition 3”.
 
 """
 st.markdown(references)
