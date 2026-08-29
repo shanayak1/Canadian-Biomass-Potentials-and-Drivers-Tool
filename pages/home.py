@@ -24,8 +24,9 @@ definitions_df = pd.DataFrame({
     ]
 })
 
-with st.container(border=True):
-    st.subheader("Definition")
+with st.container():
+    st.subheader("Terminology")
+    
     st.dataframe(
         definitions_df,
         hide_index = True,
