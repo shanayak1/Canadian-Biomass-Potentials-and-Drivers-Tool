@@ -28,24 +28,29 @@ definitions_df = pd.DataFrame({
     ]
 })
 
-with st.container():
-    st.subheader("Terminology")
-    st.text("The following terminology is used frequently throughout the biomass potentials and drivers tool:")
-    st.dataframe(
-        definitions_df,
-        hide_index = True,
-        use_container_width = True,
-        column_config = {
-            "Term": st.column_config.TextColumn(
-                "Term",
-                width = 250
-            ),
-            "Definition": st.column_config.TextColumn(
-                "Definition",
-                width = "large"
-            )
-        }
+st.subheader("Terminology")
 
-    )
+
+with st.container():
+    st.table(definitions_df)
+
+    #st.subheader("Terminology")
+    #st.text("The following terminology is used frequently throughout the biomass potentials and drivers tool:")
+    #st.dataframe(
+        #definitions_df,
+        #hide_index = True,
+        #use_container_width = True,
+        #column_config = {
+            #"Term": st.column_config.TextColumn(
+                #"Term",
+                #width = 250
+            #),
+            #"Definition": st.column_config.TextColumn(
+                #"Definition",
+                #width = "large"
+            #)
+        #}
+
+    #)
 
 
