@@ -32,5 +32,22 @@ st.subheader("Terminology")
 st.text("The following terminology is used frequently throughout the biomass potentials and drivers tool:")
 
 
+#with st.container():
+    #st.table(definitions_df)
+
+styled_df = definitions_df.style.set_properties(
+    subset=["Term"],
+    **{
+        "width": "20%",
+        "font-weight": "normal"
+    }
+).set_properties(
+    subset=["Definition"],
+    **{
+        "width": "80%",
+        "text-align": "left"
+    }
+)
+
 with st.container():
-    st.table(definitions_df)
+    st.table(styled_df)
