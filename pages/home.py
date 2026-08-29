@@ -62,5 +62,3 @@ with st.container():
 
 st.subheader("References")
 st.text("The following references were used in the formulation and research behind this Biomass Tool:")
-references = pd.read_csv("Biomass Potential and Drivers References")
-st.dataframe(references)
