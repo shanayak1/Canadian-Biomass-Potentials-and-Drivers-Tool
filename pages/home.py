@@ -35,4 +35,27 @@ st.text("The following terminology is used frequently throughout the biomass pot
 with st.container():
     st.table(definitions_df)
 
+st.subheader("Biomass Classifications")
+st.text("Within the Canadian Biomass landscape, biomass can be classified into six categories in accordance with Canadian Standards. Canadian Standards for biomass categories classify the different biomass types by origin which is a similar classification method as that used by the International Standards.")
 
+cats_df = pd.DataFrame({
+    "Term": [
+        "Forestry Biomass",
+        "Forestry Residue",
+        "Purpose Grown Energy Crops",
+        "Crop Residue",
+        "Livestock Residue",
+        "Urban Waste",
+    ],
+    "Definition":[
+        "Forestry Biomass consists of the biomass produced through the forestry industry, including fuelwood, firewood and lumber",
+        "Forestry Residue includes the unused materials from trees after the harvesting and processing stages of making lumber or any non-energy uses within the Forestry industry.",
+        "Purpose grown energy crops are inclusive of any crops that are grown for energy, such as wheat, canola and switchgrass.",
+        "Crop Residue is defined as the remains of plants after the crops are harvested and processed. This includes the residue of wheat, canola, soybean, barley and flaxseeds.",
+        "Livestock residue consists of the remains, such as manure, procduced by livestock such as cows and horses.",
+        "Urban waste includes waste from residents and other commercial activities. This includes, but is not limited to wastewater, biosolids, source separated organics and pulp mill sludge.",
+    ]
+})
+
+with st.container():
+    st.table(cats_df)
