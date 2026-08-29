@@ -11,12 +11,20 @@ definitions_df = pd.DataFrame({
     "Term": [
         "Bioeconomy",
         "Biomass",
-        "Feedstock",
+        "Dry Matter",
+        "Theoretical Potential",
+        "Technical Potential",
+        "Sustainable Potential",
+        "Energy Potential",
     ],
     "Definition":[
-        "blah",
-        "blehhh",
-        "blooh",
+        "The bioeconomy is defined as the economic activity associated with the invention, development, production and use of primarily bio-based products, bio-based production processes and/or biotechnology-based intellectual property. ",
+        "Biomass is organic material originating from plant and animal sources. Organic materials embedded in geological formations and/or fossilized are not considered biomass",
+        "Dry matter is biomass excluding its water contents. Can be calculated using Dry Mass = Biomass mass * (1- (moisture content/100)) where biomass mass is measured in tons and moisture content is a percentage.",
+        "Theoretical potential refers to the total residue production of aboveground biomass without taking into consideration any harvesting, environmental or economic constraints.",
+        "Technical potential refers to the physical amount of materials that could be technically removed from the field. This will depend on crop type, efficiency of equipment and field management factors.",
+        "Sustainable potential refers to the physical amount of materials that could be removed from the field considering technical constraints for harvesting and environmental impacts on the land.",
+        "Energy potential is the energy produced by the harvested biomass quantities",
     ]
 })
 
