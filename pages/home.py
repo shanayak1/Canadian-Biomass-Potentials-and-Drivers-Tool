@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 st.title("Biomass Potentials Tool")
 
@@ -10,11 +11,36 @@ st.subheader("Terminology")
 
 st.text("The following terminology is used frequently throughout the biomass potentials and drivers tool:")
 
+definitions_df = pd.DataFrame({
+    "Term": [
+        "Bioeconomy",
+        "Biomass",
+        "Feedstock",
+    ],
+    "Definition":[
+        "blah",
+        "blehhh",
+        "blooh",
+    ]
+})
+
 with st.container(border=True):
-    left, right = st.columns([2,6])
-    with left:
-        st.markdown("Term")
-    with right:
-        st.markdown("Definition")
+    st.subheader("Definition")
+    st.dataframe(
+        definitions_df,
+        hide_index = True,
+        use_container_width = True,
+        column_config = {
+            "Term": st.column_config.TextColumn(
+                "Term",
+                width = 250
+            ),
+            "Definition": st.column_config.TextColumn(
+                "Definition",
+                width = "large"
+            )
+        }
+
+    )
 
 
